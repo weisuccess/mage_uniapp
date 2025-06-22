@@ -1,0 +1,6 @@
+{
+  "type": "sign",
+  "signKey": "SAFA1VUX42UFH9QSVICW6YKNRHVXM67X", 
+  "hashMethod": "hmac-sha256", 
+  "timeDiffTolerance": 60 
+}

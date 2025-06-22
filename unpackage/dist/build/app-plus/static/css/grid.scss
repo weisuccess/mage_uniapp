@@ -1,0 +1,414 @@
+// 常用间距
+@each $key in 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12,16, 18, 20, 24, 28, 30, 32, 34, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 148,160,170,180, 200,250,300,400{
+   .br#{$key} {
+       border-radius: #{$key}upx;
+   }
+	.m#{$key} {
+        margin: #{$key}upx;
+    }
+	
+	.mt#{$key} {
+        margin-top: #{$key}upx;
+    }
+
+    .mr#{$key} {
+        margin-right: #{$key}upx;
+    }
+
+    .mb#{$key} {
+        margin-bottom: #{$key}upx;
+    }
+
+    .ml#{$key} {
+        margin-left: #{$key}upx;
+    }
+    .my#{$key} {
+        margin: #{$key}upx 0;
+    }
+    .mx#{$key} {
+        margin: 0 #{$key}upx;
+    }
+
+    .pt#{$key} {
+        padding-top: #{$key}upx;
+    }
+
+    .pr#{$key} {
+        padding-right: #{$key}upx;
+    }
+
+    .pb#{$key} {
+        padding-bottom: #{$key}upx;
+    }
+
+    .pl#{$key} {
+        padding-left: #{$key}upx;
+    }
+
+    .pd#{$key} {
+        padding: #{$key}upx;
+    }
+
+    .px#{$key} {
+        padding: 0 #{$key}upx;
+    }
+
+    .py#{$key} {
+        padding: #{$key}upx 0;
+    }
+}
+
+// 常用字号
+@each $key in 0, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 46, 48, 50, 56, 62,60,62,66,77,96 {
+    .fz#{$key} {
+        font-size: #{$key}upx;
+    }
+}
+
+@each $key in 300, 400, 500, 600, 700, 800, 900 {
+    .fw#{$key} {
+        font-weight: #{$key};
+    }
+}
+
+// 常用行高
+@each $key in 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 40, 42, 46, 48, 50,60,70,80, 90, 100,120,140,160 {
+    .lh#{$key} {
+        line-height: #{$key}upx;
+    }
+
+    .h#{$key} {
+        height: #{$key}upx;
+    }
+}
+
+// vertical align
+@each $key in top, middle, bottom {
+    .va-#{$key} {
+        vertical-align: #{$key};
+    }
+}
+
+.text-break-word {
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+// 转大写
+.text-uppercase {
+    text-transform: uppercase;
+
+    input {
+        text-transform: uppercase;
+    }
+}
+
+.textMax{
+	width: 100%;  //宽度
+	overflow:hidden;  //超出文本隐藏
+	text-overflow:ellipsis;  ///超出部分省略号显示
+	display:-webkit-box;  //弹性盒模型
+	-webkit-box-orient:vertical;  //上下垂直
+	-webkit-line-clamp:2;  //自定义行数
+}
+.textMax3{
+	width: 100%;  //宽度
+	overflow:hidden;  //超出文本隐藏
+	text-overflow:ellipsis;  ///超出部分省略号显示
+	display:-webkit-box;  //弹性盒模型
+	-webkit-box-orient:vertical;  //上下垂直
+	-webkit-line-clamp:3;  //自定义行数
+}
+
+.ellipsis {
+  white-space: nowrap; /* 确保文本在一行内显示 */
+  overflow: hidden; /* 超出容器的文本将被隐藏 */
+  text-overflow: ellipsis; /* 使用省略号表示被截断的文本 */
+}
+
+
+
+
+// 单行截断
+// .line-clamp1 {
+//     @extend %line-clamp1;
+// }
+.din{
+	font-family: DIN;
+}
+.PFSC{
+	font-family: PingFang SC, PingFang SC;
+}
+.w100 {
+    width: 100%;
+}
+
+.color-main {
+	color: #EB5C20;
+}
+.color-999 {
+    color: #999;
+}
+.color-777 {
+    color: #777;
+}
+.color-666 {
+    color: #666;
+}
+.color-000F9D {
+	color: #000F9D;
+}
+.color-fff {
+	color: #fff;
+}
+.color-7C7C {
+	color: #7C7C7C;
+}
+.color-AF2827 {
+	color: #AF2827;
+}
+.color-33CC33{
+	color: #33CC33;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.text-align-r {
+    text-align: right;
+}
+
+.text-align-l {
+    text-align-last: left;
+}
+
+.text-align-c {
+    text-align: center;
+}
+
+// 常用栅格布局
+.flex-column-between-start {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flex-column-center-center {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-column-center {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-column-around-center {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-column-space-around {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.flex-column-start-start {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.flex-column-center-center {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-wrap-start-center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-start-start {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-start-stretch {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.flex-start-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-start-end {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.flex-start-center-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-around-center-wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+	flex-flow: row wrap;
+}
+
+.flex-start-start-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-center-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center-start {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex-between-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-space-around {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.flex-around-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+	aalign-items: center;
+}
+
+.flex-between-center-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-between-start-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flex-between-start {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.flex-between-end {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.flex-end-start {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.flex-end-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.subtext-color {
+    color: #838c97;
+}
+
+.seo-tag {
+    font-weight: normal;
+}
+
+.text-center {
+	text-align: center;
+}
+.header_left_icon {
+	width: 100rpx;
+	height: 50rpx;
+	margin-left: 30rpx;
+	margin-top: var(--status-bar-height);
+	position: fixed;
+	top: 20rpx;
+	z-index: 99;
+
+	image {
+		width: 58rpx;
+		height: 58rpx;
+	}
+}
+.ts-btn{
+	background: url('/static/login/login-dlbtn.png') no-repeat;
+	background-size: 100% 100%;
+	height: 100rpx;
+	line-height: 100rpx;
+}

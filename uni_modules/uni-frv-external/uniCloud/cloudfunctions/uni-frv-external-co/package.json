@@ -1,0 +1,11 @@
+{
+  "name": "uni-frv-external-co",
+  "version": "1.0.2",
+  "dependencies": {
+    "uni-cloud-s2s": "file:../../../../uni-cloud-s2s/uniCloud/cloudfunctions/common/uni-cloud-s2s",
+    "uni-config-center": "file:../../../../uni-config-center/uniCloud/cloudfunctions/common/uni-config-center"
+  },
+  "extensions": {
+    "uni-cloud-verify": {}
+  }
+}

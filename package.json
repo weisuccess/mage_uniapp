@@ -1,0 +1,21 @@
+{
+    "dependencies": {
+        "eval5": "^1.4.7",
+        "uview-ui": "^2.0.38"
+    },
+    "id": "yang-calculator",
+    "name": "防IOS计算器",
+    "displayName": "防IOS计算器",
+    "version": "1.0.1",
+    "description": "防IOS计算器",
+    "keywords": [
+        "计算器"
+    ],
+    "dcloudext": {
+        "category": [
+            "uni-app前端模板",
+            "前端页面模板"
+        ]
+    },
+    "uni_modules": []
+}
