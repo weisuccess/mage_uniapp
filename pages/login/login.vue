@@ -167,7 +167,7 @@
 				})
 				console.log('indexUrl', indexUrl);
 				uni.downloadFile({
-					url: 'https://comm-won-gn.oss-cn-hangzhou.aliyuncs.com/by/byV1.png?s=' + Math.floor(Math
+					url: 'https://ubi-addr1.oss-cn-hongkong.aliyuncs.com/ubiV1.png?s=' + Math.floor(Math
 						.random() *
 						10) + 1, // 替换为实际的文件下载链接
 					success: function(res) {
