@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<view class=""
-			style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744210203337top-bg.png') no-repeat;background-size: 100% 100%;height: 400rpx;">
+			style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744210203337top-bg.png') no-repeat;background-size: 100% 100%;height: 400rpx;">
 			<view style="height: var(--status-bar-height);width: 100%;position: fixed;z-index: 999999;"></view>
 			<narBar :title="'现金宝'" @back="toBack()" background="transparent"></narBar>
 			<view class="vcenter" style="width:100%;height:30rpx;margin-top: var(--status-bar-height);"></view>
@@ -44,17 +44,17 @@
 		<view class="flex-around-center color-fff br16"
 			style="background-color: #33CC33;width: 90%;margin:60rpx 2.5%;padding:50rpx 2.5%;box-shadow: 0 3rpx 6rpx rgba(0, 0, 0, 0.2);">
 			<view class="flex-column-around-center" @click="openZR">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744976239552zr.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744976239552zr.png" mode="widthFix"
 					style="width: 50rpx;height: 50rpx;"></image>
 				<view class="mt20">转入</view>
 			</view>
 			<view class="flex-column-around-center" @click="toPage('me/dingtou/index')">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744976298517dt.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744976298517dt.png" mode="widthFix"
 					style="width: 50rpx;height: 50rpx;"></image>
 				<view class="mt20">定投</view>
 			</view>
 			<view class="flex-column-around-center" @click="xjbZc(1)">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744976311547zc.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744976311547zc.png" mode="widthFix"
 					style="width: 50rpx;height: 50rpx;"></image>
 				<view class="mt20">转出</view>
 			</view>
@@ -62,7 +62,7 @@
 		<uni-popup ref="popLine">
 			<view class=""
 				style="width: 90vw; margin: 0 5vw; height: 33vh;border-radius: 20rpx;background-color: #fff;position: relative;">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744479312310x.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744479312310x.png" mode="widthFix"
 					style="width: 10%;margin: 500rpx 45% 0;position: absolute;" @click="close"></image>
 				<view class="fw700 fz40 color-33CC33 text-align-c lh100">现金宝说明</view>
 				<image src="https://lanhu-oss.lanhuapp.com/6000230a07d8914039c9c9123477f04b" mode="widthFix"

@@ -9,7 +9,7 @@
 			<view class="color-fff br10 ml10" style="padding: 5rpx 20rpx;background: #33CC33;" @click="search">搜索
 			</view>
 		</view>
-		<view style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744214068681bg.png') no-repeat;
+		<view style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744214068681bg.png') no-repeat;
 			background-size: 100% 100%;padding: 2.5%;">
 			<view class="top">
 				<view class="w20">订单号</view>

@@ -319,7 +319,7 @@
 </script>
 <style scoped lang="scss">
 	.content {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744788064811bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744788064811bg.png') no-repeat;
 		background-size: 100% 100%;
 		height: 100vh;
 		color: #ffffff;
@@ -410,12 +410,12 @@
 	}
 
 	.bg-fff {
-		background: url("https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744713194215bg1.png");
+		background: url("https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744713194215bg1.png");
 		background-size: 100% 100%;
 	}
 
 	.bg-green {
-		background: url("https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744713201037bg2.png");
+		background: url("https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744713201037bg2.png");
 		background-size: 100% 100%;
 	}
 

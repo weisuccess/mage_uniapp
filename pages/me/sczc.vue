@@ -12,25 +12,25 @@
 		</view> -->
 		<scroll-view scroll-y="true" :style="{height:windowHeight+'px'}" style="width: 100%;">
 			<view
-				style="width: 100%;height: 550rpx; background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744526148932top.png') no-repeat;background-size: 100% 100%;">
+				style="width: 100%;height: 550rpx; background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744526148932top.png') no-repeat;background-size: 100% 100%;">
 				<view class="color-fff fz60 fw700"
 					style="position: absolute;z-index: 9;top: 200rpx;left: 70rpx;">市场资产
 					<br> 管理</view>
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744527384520sm.png" mode="widthFix" @click="explain()"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744527384520sm.png" mode="widthFix" @click="explain()"
 					style="position: absolute;z-index: 9;top: 300rpx;right: 20rpx;width: 150rpx;height: 100rpx;">
 				</image>
 			</view>
-			<!-- <image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744526148932top.png" mode="widthFix"
+			<!-- <image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744526148932top.png" mode="widthFix"
 				style="width: 100%;"></image> -->
 			<view style="margin-top: -115rpx;position: relative;z-index: 9;">
 				<view
 					style="width: 95%;padding: 2.5%;margin: 2.5% 0;border-radius: 15rpx;
-						padding-bottom: 40rpx;background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744526409290sc-bg.png') no-repeat;background-size: 100% 100%;"
+						padding-bottom: 40rpx;background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744526409290sc-bg.png') no-repeat;background-size: 100% 100%;"
 					v-for="(item,index) in list" :key="index" v-if="index>=1">
 					<view class="flex-center-center color-fff">
 						<view class="" v-for="i in index">
 							<image
-								src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17445267109664ff9f5e7a90ad0cd9d8ad447cbde8bea4a3057a37fbb-fwBCSO_fw1200@3x.png"
+								src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17445267109664ff9f5e7a90ad0cd9d8ad447cbde8bea4a3057a37fbb-fwBCSO_fw1200@3x.png"
 								mode="widthFix" style="width: 40rpx;height: 40rpx;"></image>
 						</view>
 						<view class="ml10">{{item.marketGrade}}</view>
@@ -56,7 +56,7 @@
 		<uni-popup ref="popLine">
 			<view class=""
 				style="width: 90vw; margin: 0 5vw; height: 33vh;border-radius: 20rpx;background-color: #fff;position: relative;">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744479312310x.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744479312310x.png" mode="widthFix"
 					style="width: 10%;margin: 500rpx 45% 0;position: absolute;"  @click="close"></image>
 				<view class="fw700 fz40 color-33CC33 text-align-c lh100" >市场资产管理说明</view>
 				<image src="https://lanhu-oss.lanhuapp.com/6000230a07d8914039c9c9123477f04b" mode="widthFix"
@@ -64,7 +64,7 @@
 				<scroll-view scroll-y="" style="max-height: 40vh;" class="mt30 fw700">
 					<view style="font-size: 22rpx;color: #2F2F2F;width: 95%;margin: 0 2.5%;">
 						<view style="font-size: 22rpx;width: 95%;margin: 0 2.5%;">
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744527875130smx.png" mode="widthFix" style="width: 100%;max-height: 400rpx;"></image>
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744527875130smx.png" mode="widthFix" style="width: 100%;max-height: 400rpx;"></image>
 						</view>
 					</view>
 				</scroll-view>

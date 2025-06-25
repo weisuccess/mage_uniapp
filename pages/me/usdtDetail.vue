@@ -24,12 +24,12 @@
 		<uni-popup ref="popup">
 			<view class=""
 				style="width: 90vw; margin: 0 5vw; height: 33vh;border-radius: 20rpx;background-color: #fff;position: relative;">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744479312310x.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744479312310x.png" mode="widthFix"
 					style="width: 10%;margin: 500rpx 45% 0;position: absolute;" @click="close"></image>
 				<image
-					src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744877860031eb436f78de539c1baf7b44719a31a22eb7e1731d2497e-nrNa4I@3x.png"
+					src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744877860031eb436f78de539c1baf7b44719a31a22eb7e1731d2497e-nrNa4I@3x.png"
 					mode="widthFix" style="width: 60%;margin: -200rpx 20% 0;"></image>
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744877942416lxkf.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744877942416lxkf.png" mode="widthFix"
 					style="width: 90%;margin: 100rpx 5% 0;border-bottom: 1px dashed #ccc;" class="pb30"></image>
 				<view class="color-fff text-align-c lh80 br60" @click="qunliao"
 				 style="width: 60%;margin: 20rpx 20%;background-color: #33CC33;">立即联系客服</view>

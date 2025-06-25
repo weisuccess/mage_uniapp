@@ -21,8 +21,6 @@
 							style="width: 230rpx;margin: 0 3% 0 5%;height: 230rpx;border-radius: 30rpx;">
 						</image>
 					</view>
-
-
 					<view style="width: calc(92% - 200rpx);margin-left: 70rpx;">
 						<view class="tit">资产总金额：<view class="mon" style="color: #606060;">{{arr.circulation}}$</view>
 						</view>
@@ -51,14 +49,14 @@
 						购买数量
 					</view>
 					<view style="display: flex;align-items: center;">
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744787105754jia.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744787105754jia.png"
 							mode="widthFix" style="width: 30rpx;height: 30rpx;" @click="num(2)">
 						</image>
 						<view
 							style="min-width: 40rpx;text-align: center;padding: 0 10rpx;font-size: 29rpx;color: #403F3F;">
 							{{outData.quantity}}
 						</view>
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744787123486jian.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744787123486jian.png"
 							mode="widthFix" style="width: 30rpx;height: 30rpx;" @click="num(1)">
 						</image>
 					</view>
@@ -70,7 +68,7 @@
 						</view>
 						<view class="vcenter">
 							<view class="vcenter" @click="outData.select=1">
-								<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744787055762gou.png"
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744787055762gou.png"
 									mode="widthFix" v-if="outData.select==1"
 									style="width: 30rpx;height: 30rpx;margin: 0 20rpx;"></image>
 								<image src="/static/products/noSelect.png" mode="widthFix" v-if="outData.select==2"
@@ -78,7 +76,7 @@
 								<view class="">现金券</view>
 							</view>
 							<view class="vcenter" @click="outData.select=2">
-								<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744787055762gou.png"
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744787055762gou.png"
 									mode="widthFix" v-if="outData.select==2"
 									style="width: 30rpx;height: 30rpx;margin: 0 20rpx;"></image>
 								<image src="/static/products/noSelect.png" mode="widthFix" v-if="outData.select==1"
@@ -95,14 +93,14 @@
 								<view class="color-000">{{item.title}}</view>
 								<view class="fz22 color-999">满{{item.rulesOfUse}} - {{item.couponsMoney}}</view>
 							</view>
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744787055762gou.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744787055762gou.png"
 								mode="widthFix" v-if="outData.couponsId==item.id"
 								style="width: 30rpx;height: 30rpx;margin: 0 20rpx;"></image>
 							<image src="/static/products/noSelect.png" mode="widthFix" v-if="outData.couponsId!=item.id"
 								style="width: 30rpx;height: 30rpx;margin: 0 20rpx;"></image>
 						</view> -->
 						<scroll-view scroll-y="true" style="max-height: 400rpx;">
-							<view class="flex-center-center" style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744736617359kq.png') no-repeat;background-size: 100% 100%;
+							<view class="flex-center-center" style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744736617359kq.png') no-repeat;background-size: 100% 100%;
 									padding: 50rpx 0 60rpx;position: relative;" v-for="(item,index) in coupons" :key="index"
 								v-if="item.couponsType==outData.select" @click="selcoupons(item.id)">
 								<view class="color-33CC33 fz22" style="position: absolute;top: 0;left: 20rpx;">全品类通用
@@ -125,7 +123,7 @@
 											有效期至{{item.effectiveTime | convertTimestampToDate}}
 										</view>
 									</view>
-									<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744787055762gou.png"
+									<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744787055762gou.png"
 										mode="widthFix" v-if="outData.couponsId==item.id"
 										style="width: 30rpx;height: 30rpx;margin: 0 20rpx;"></image>
 									<image src="/static/products/noSelect.png" mode="widthFix"
@@ -145,7 +143,7 @@
 						style="background-color: #33CC33;width: 95%;margin: 0 2.5%;border-radius: 30rpx;"></textarea> -->
 				</view>
 				<view class="vcenter-left fw700" style="margin: 30rpx;">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744786927392mima.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744786927392mima.png" mode="widthFix"
 						style="width: 50rpx;height: 50rpx;">
 					</image>
 					<view style="font-size: 35rpx;color: #000;margin-left: 10rpx;">交易密码</view>
@@ -362,13 +360,13 @@
 </script>
 <style scoped lang="scss">
 	.content {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174410046676033CC33-bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174410046676033CC33-bg.png') no-repeat;
 		background-size: 100% 100%;
 		height: 100vh;
 	}
 
 	.k {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744290610523bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744290610523bg.png') no-repeat;
 		background-size: 100% 100%;
 		width: 95%;
 		padding-bottom: 60rpx;

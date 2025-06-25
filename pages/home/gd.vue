@@ -13,7 +13,7 @@
 			</view>
 			<view class="flex-start-center-wrap mt20">
 				<view class="menu_item" v-for="(item,index) in menuList" :key="index" @click="toPage(item.path,item.txt)">
-					<image :src="'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/'+item.icon+'.png'" class="image_2" mode="heightFix"></image>
+					<image :src="'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/'+item.icon+'.png'" class="image_2" mode="heightFix"></image>
 					<view class="text_1">{{item.txt}}</view>
 				</view>
 			</view>
@@ -30,7 +30,7 @@
 			</view>
 			<view class="flex-start-center mt60">
 				<view class=" menu_item" v-for="(item,index) in menuList2" :key="index" @click="toPage(item.path,item.txt)">
-					<image :src="'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/'+item.icon+'.png'" class="image_2" mode="heightFix"></image>
+					<image :src="'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/'+item.icon+'.png'" class="image_2" mode="heightFix"></image>
 					<view class="text_1">{{item.txt}}</view>
 				</view>
 			</view>
@@ -134,7 +134,7 @@
 </script>
 <style lang="scss" scoped>
 	.content {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174410046676033CC33-bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174410046676033CC33-bg.png') no-repeat;
 		background-size: 100% 70%;
 		min-height: 100vh;
 	}

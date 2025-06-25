@@ -18,12 +18,12 @@
 			<view class="" style="margin-top: var(--status-bar-height);">
 				<view class="">
 					<view class=" ">
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17487895378391.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17487895378391.png"
 							mode="widthFix" style="width: 100%;"></image>
 					</view>
 				</view>
 
-				<!-- <image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17485155944881.jpg" mode="widthFix" class="w100"></image> -->
+				<!-- <image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17485155944881.jpg" mode="widthFix" class="w100"></image> -->
 				<view class="mt30">
 					<text class="lh60 fz40">项目编号:{{list.positionCode}}</text>
 					<br />
@@ -34,7 +34,7 @@
 					乙方(投资方):{{list.trueName}}<br /><br />
 					丙方(担保方):友邦保險(國際)有限公司香港分行
 				</view>
-				<!-- <image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17485144253522.jpg"  mode="widthFix" class="w100"></image> -->
+				<!-- <image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17485144253522.jpg"  mode="widthFix" class="w100"></image> -->
 
 				<view class="mt30">
 					基于各方的业务需求和责任,双方签订本合同完全是自愿的,并非强迫或欺骗。
@@ -92,8 +92,8 @@
 					</table>
 				</view>
 
-				<!-- <image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17485145250754.png"  mode="widthFix" class="w100"></image>
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17485144682783.jpg"  mode="widthFix" class="w100"></image> -->
+				<!-- <image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17485145250754.png"  mode="widthFix" class="w100"></image>
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17485144682783.jpg"  mode="widthFix" class="w100"></image> -->
 				<view class="mt60">
 					<text class="fw700 fz35 ">二、投资流程</text> <br /><br />
 					1.本协议成立:甲方首先在“UBI”线上平台上发布相关的投资产品项目收益,乙方按照甲方的规则,通过在“UBI”线上平台上相关的投资产品项目收益,按钮确认投资时,本协议下所约定的关系即成立,本协议的签署关系同时成立。
@@ -142,7 +142,7 @@
 				<view class="flex-start-center ml30" style="position: relative;height: 300rpx;line-height: 50rpx;">
 					甲方：UBI资产管理公司<br />
 					<!--  {{list.createTime}} -->
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1748514881485jia.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1748514881485jia.png" mode="widthFix"
 						class="zhang"></image>
 				</view>
 				<view class="ml40" style="position: relative;height: 100rpx;line-height: 60rpx;">
@@ -154,7 +154,7 @@
 				<view class="flex-start-center ml30" style="position: relative;height: 300rpx;line-height: 50rpx;">
 					丙方：友邦保險(國際)有限公司香港分行<br />
 					<!--  {{list.createTime}} -->
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1748514891103bing.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1748514891103bing.png" mode="widthFix"
 						class="zhang"></image>
 				</view>
 			</view>

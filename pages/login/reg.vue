@@ -8,7 +8,7 @@
 					<view class="vform w100">
 						<view class="vformitem">
 							<view class="vformtitle" style="padding: 0 40rpx;">
-								<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745854666257phone.png" style="width: 40rpx;height: 40rpx;"></image>
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854666257phone.png" style="width: 40rpx;height: 40rpx;"></image>
 								<picker mode="selector" :range="ph" :value="phindex" @change="changePh">
 									<view class="flex-start-center">
 										<view>{{ph[phindex]}}</view>
@@ -22,7 +22,7 @@
 						</view>
 						<view class="vformitem">
 							<view class="vformtitle" style="padding: 0 40rpx;">
-								<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745854625568password.png" style="width: 40rpx;height: 40rpx;"></image>
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854625568password.png" style="width: 40rpx;height: 40rpx;"></image>
 								<view class="vcenter vinput" style="width:100%;display: flex;border: none;">
 									<view style="width:88%;height:100%">
 										<input :type="showPassword ? 'text' : 'password'" v-model="regInfo.passWord"
@@ -38,7 +38,7 @@
 						</view>
 						<view class="vformitem">
 							<view class="vformtitle" style="padding: 0 40rpx;">
-								<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745854625568password.png" style="width: 40rpx;height: 40rpx;"></image>
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854625568password.png" style="width: 40rpx;height: 40rpx;"></image>
 								<view class="vcenter vinput" style="width:100%;display: flex;border: none;">
 									<view style="width:88%;height:100%">
 										<input :type="showPassword ? 'text' : 'password'" v-model="regInfo.mpPassword"
@@ -54,14 +54,14 @@
 						</view>
 						<view class="vformitem">
 							<view class="vformtitle" style="padding: 0 40rpx;">
-								<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745854625568password.png" style="width: 40rpx;height: 40rpx;"></image>
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854625568password.png" style="width: 40rpx;height: 40rpx;"></image>
 								<input class="vinput" style="border: none;" type="number" v-model="regInfo.payPassword"
 									maxlength="6" :placeholder="getLg('设置交易密码')" />
 							</view>
 						</view>
 						<view class="vformitem">
 							<view class="vformtitle" style="padding: 0 40rpx;">
-								<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745854529154yqm.png" style="width: 40rpx;height: 40rpx;"></image>
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854529154yqm.png" style="width: 40rpx;height: 40rpx;"></image>
 								<input class="vinput" style="border: none;" type="text"
 									v-model="regInfo.acceptInviteCode" :placeholder="getLg('请输入邀请码')" />
 							</view>
@@ -82,7 +82,7 @@
 						<image src="https://cecece777.oss-cn-hongkong.aliyuncs.com/null/1737137067700check.png"
 							mode="aspectFit" style="width:36rpx;height: 36rpx;" v-if="!isck" @click="checkboxChange">
 						</image>
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745854089500sel.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854089500sel.png"
 							mode="aspectFit" style="width:36rpx;height: 36rpx;" v-if="isck" @click="checkboxChange">
 						</image>
 					</view>

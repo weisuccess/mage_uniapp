@@ -20,7 +20,7 @@
 			style="width: 80%;margin:60rpx 5% 30rpx;padding: 0 5%;">
 				点击修改登录设备
 			</view>
-			<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745343810243gl.png" mode="widthFix"
+			<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745343810243gl.png" mode="widthFix"
 				style="width: 350rpx;height: 100rpx;margin:60rpx 10% 0;"></image>
 			<view class="" style="width: 80%;margin:0 5% 0;padding: 3% 5%;line-height: 1.5rem;">
 				1、常用设备为当前登录设备<br>

@@ -18,7 +18,7 @@
 				<view style="margin: 10rpx;padding: 10rpx;">
 					<scroll-view scroll-y="true" :style="{maxHeight:windowHeight-250+'px'}">
 						<view class="">
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744106935085logo-000.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744106935085logo-000.png"
 								mode="aspectFill" style="width: 100rpx;
 							height: 50rpx;"></image>
 						</view>
@@ -112,7 +112,7 @@
 </script>
 <style scoped lang="scss">
 	.content {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174410046676033CC33-bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174410046676033CC33-bg.png') no-repeat;
 		background-size: 100% 100%;
 		height: 100vh;
 		// color: #ffffff;
@@ -128,7 +128,7 @@
 	}
 
 	.box {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744209428353notice-bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744209428353notice-bg.png') no-repeat;
 		background-size: 100% 100%;
 		width: 85%;
 		margin: 0 5%;

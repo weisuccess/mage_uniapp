@@ -24,7 +24,7 @@
 		</view>
 		<view class="l-dialer__pointer" :style="pointerStyle">
 			<slot v-if="$slots && $slots.pointer" name="pointer" />
-			<image v-else :class="!isTurnIng ? 'heart': ''" src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744738149435zz.png"
+			<image v-else :class="!isTurnIng ? 'heart': ''" src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744738149435zz.png"
 				style="width: 100%;position: relative;" mode="widthFix" @tap="$emit('click')">
 			</image>
 			<!-- <view style="position: absolute;bottom: 30%;text-align: center;width: 100%;" @tap="$emit('click')">

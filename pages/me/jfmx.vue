@@ -5,7 +5,7 @@
 			<view class="color-33CC33 mt100 pd30">
 				<text class="fw700 fz50 mr10">{{user.integral | toInt}} </text> 积分
 			</view>
-			<view style="width: 100%;background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744214068681bg.png') no-repeat;
+			<view style="width: 100%;background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744214068681bg.png') no-repeat;
 			background-size: 100% 100%;">
 				<view class="navTab">
 					<view :class="isActive==0?'active':''" @click="check(0)">积分明细</view>

@@ -4,7 +4,7 @@
 			<narBar :title="getLg('')" @back="toBack()" background="transparent"></narBar>
 			<scroll-view scroll-y="true" class="" :style="{height:windowHeight+'px'}" @scrolltolower="reachBottom">
 				<view style="width: 95%;margin: var(--status-bar-height) 2.5% 0;">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744988827442logo.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744988827442logo.png" mode="widthFix"
 						class="pt30" style="width: 40%;">
 					</image>
 					<view class="mt20 lh100" style="color: #097F09;">人人可用的专业配置服务，升级啦></view>
@@ -14,29 +14,29 @@
 					<view class="" @click="toPage('me/tyj/tyfwsy')">体验服务收益</view> -->
 					<view class="">
 						<view class="flex-between-center">
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17450813006964.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17450813006964.png"
 								mode="widthFix" style="width: 35%;height: 100rpx;" @click="toPage('me/tyj/lq')"></image>
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17450813323892.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17450813323892.png"
 								mode="widthFix" style="width: 35%;height: 100rpx;" @click="toPage('home/zxxt/text',4)">
 							</image>
 						</view>
 						<image
-							src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745081226301b1888f943968d6c98c6eb79d28144bb787de016a1da58-fHfGDN@2x.png"
+							src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745081226301b1888f943968d6c98c6eb79d28144bb787de016a1da58-fHfGDN@2x.png"
 							mode="widthFix" style="width: 40%;height: 100rpx;margin: 0 30%;"></image>
 						<view class="flex-between-center">
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17450813499993.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17450813499993.png"
 								mode="widthFix" style="width: 35%;height: 100rpx;"
 								@click="toPage('me/tyj/tyfwsy','服务收益')">
 							</image>
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17450813597161.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17450813597161.png"
 								mode="widthFix" style="width: 35%;height: 100rpx;"
 								@click="toPage('me/tyj/record','体验记录')">
 							</image>
 						</view>
 					</view>
-					<!-- <image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744988979448jqr.png" mode="widthFix"
+					<!-- <image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744988979448jqr.png" mode="widthFix"
 						class="mt20" style="width: 100%;max-height: 400rpx;"></image> -->
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744989088485jt.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744989088485jt.png" mode="widthFix"
 						class="mt20" style="width: 100%;max-height: 100rpx;"></image>
 					<view class="fw700 text-align-c lh80">
 						HI~您有一笔U资产体验 <text style="color: #097F09;">1000USDT</text> 待领取~
@@ -328,7 +328,7 @@
 </script>
 <style scoped lang="scss">
 	.content {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744988684512bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744988684512bg.png') no-repeat;
 		background-size: 100% 100%;
 		height: 100vh;
 	}

@@ -81,7 +81,7 @@
 							身份证国徽面</view>
 					</view>
 				</view>
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744481226196yq.png" mode="heightFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744481226196yq.png" mode="heightFix"
 					style="width: 200rpx;height: 40rpx;" class="mt60"></image>
 				<view class="flex-start-center mt30">
 					<view style="background: #004BAE;width: 10rpx;height: 10rpx;border-radius: 50%;"></view>
@@ -120,8 +120,8 @@
 				showup: 2,
 				trueName: '',
 				idCard: '',
-				cardFront: 'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17445281921891737112587392sf1.png',
-				cardSide: 'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17445282956061737112611352sf2.png',
+				cardFront: 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17445281921891737112587392sf1.png',
+				cardSide: 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17445282956061737112611352sf2.png',
 				user: {}
 			}
 		},

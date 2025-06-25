@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<view class="" style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744210203337top-bg.png') no-repeat;background-size: 100% 100%;height: 400rpx;">
+		<view class="" style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744210203337top-bg.png') no-repeat;background-size: 100% 100%;height: 400rpx;">
 			<view style="height: var(--status-bar-height);width: 100%;position: fixed;z-index: 999999;"></view>
 			<narBar :title="'充值'" @back="toBack()" background="transparent"></narBar>
 		</view>
@@ -45,7 +45,7 @@
 						<view style="word-wrap: break-word;width: 75%;">
 							{{user.youdunRechargeAddress}}
 						</view>
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744215001712copy.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744215001712copy.png"
 							mode="widthFix" style="width: 40rpx;height: 40rpx;margin-left: 10rpx;" @click="copy(1)">
 						</image>
 					</view>

@@ -2,23 +2,23 @@
 	<view class="content">
 		<scroll-view scroll-y="true" class="box" :style="{'height':windowHeight+'px'}">
 			<narBar title="" @back="toBack()" background="transparent"></narBar>
-			<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17454008818066071143896366302671.jpg"
+			<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17454008818066071143896366302671.jpg"
 				mode="widthFix" style="width: 100%;min-height: 100vh;position: absolute;top: 0;"></image>
 			<view class="pb100" style="position: absolute;z-index: 9;width: 100%;">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744900376890组 4@3x.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744900376890组 4@3x.png" mode="widthFix"
 					style="width: 80%;margin: 50rpx 10% 0;"></image>
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745416416923图层 2.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745416416923图层 2.png" mode="widthFix"
 					style="width: 100%;" @click="shakeImage" :style="imageStyle"></image>
 				<view class="w100 text-align-c" style="margin-top: -15vh;position: absolute;z-index: 9;">
 					<view class="" style="color: #423975;">已有 {{people}} 人参与</view>
 					<view class="mt50" style="color: #423975;">您今天还有 {{user.lotteryFrequency}} 次砸蛋机会</view>
 				</view>
 
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745401112146zi.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745401112146zi.png" mode="widthFix"
 					style="width: 60%;margin: 50rpx 20% 0; "></image>
 				<view class="tiao br10">
 					<view class="pd20 mt30" v-for="(item,index) in list" :key="index"
-						style="position: relative; background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744900574770tiao.png') no-repeat;background-size: 100% 100%;">
+						style="position: relative; background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744900574770tiao.png') no-repeat;background-size: 100% 100%;">
 						<view class="fz22 color-fff" style="position: absolute;right: 70rpx;top: 8rpx;">
 							砸蛋次数+{{item.taskReward}}</view>
 						<view class="flex-between-start">
@@ -45,7 +45,7 @@
 			<view style="width: 80vw; margin: 0 10vw; height: auto;border-radius: 20rpx;background-color: #fff;
 			background: #fff;">
 				<image
-					src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17446445089418b06ff1a53b0fde9471867508df9d45bedfedcf2bfbb4-9AuSqg@3x.png"
+					src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17446445089418b06ff1a53b0fde9471867508df9d45bedfedcf2bfbb4-9AuSqg@3x.png"
 					mode="widthFix" style="width: 90%;margin: -150rpx 5% 0;"></image>
 				<view class="">
 					<view class="text-align-c fw700 fz40">

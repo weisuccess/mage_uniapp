@@ -93,7 +93,7 @@
 </style>
 <style scoped lang="scss">
 	.content {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744373034458bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744373034458bg.png') no-repeat;
 		background-size: 100% 100%;
 		height: 100vh;
 		// color: #ffffff;

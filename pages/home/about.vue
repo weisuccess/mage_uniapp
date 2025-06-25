@@ -4,7 +4,7 @@
 		<narBar :title="getLg('关于UBI')" @back="toBack()"></narBar>
 		<!-- <scroll-view scroll-y="true" :style="{height:windowHeight+'px'}" style="width: 100%;border: 1px solid green;"> -->
 		<view class="">
-			<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744477050582UBI.png" mode="widthFix"
+			<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744477050582UBI.png" mode="widthFix"
 				style="width: 20%;margin: 150rpx 40% 30rpx;"></image>
 			<view class="box lh90">
 				<view class="text-align-c">当前版本：{{version_number}}</view>
@@ -41,13 +41,13 @@
 		<uni-popup ref="popup" type="center" borderRadius="10px">
 			<view class="popup br16">
 				<image
-					src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744479233875fb99ad850d8397c5b9f15a0ef379b7a6a549df06d88b-SI2tOY_fw1200@3x.png"
+					src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744479233875fb99ad850d8397c5b9f15a0ef379b7a6a549df06d88b-SI2tOY_fw1200@3x.png"
 					mode="widthFix" style="width: 30%;margin: -100rpx 35% 0;"></image>
 				<view class="color-000 text-align-c fz40 fw700 lh120 mt30">目前已是最新版本</view>
 				<view class="wzdl text-align-c lh80 br60 " @click="close">
 					我知道了~
 				</view>
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744479312310x.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744479312310x.png" mode="widthFix"
 					style="width: 10%;margin: 100rpx 45% 0;position: absolute;"  @click="close"></image>
 			</view>
 		</uni-popup>

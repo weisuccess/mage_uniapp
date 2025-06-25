@@ -31,42 +31,42 @@
 				statusBarHeight: uni.getStorageSync('statusBarHeight'),
 				windowHeight: uni.getSystemInfoSync().windowHeight - 230,
 				list: [{
-						img: 'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744351026466jyjl.png',
+						img: 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744351026466jyjl.png',
 						name: '交易记录',
 						path: 'me/assetDetails'
 					},
 					{
-						img: 'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744351060810cz.png',
+						img: 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744351060810cz.png',
 						name: '充值记录',
 						path: 'me/moneyDetails'
 					},
 					{
-						img: 'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744351171513txjl.png',
+						img: 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744351171513txjl.png',
 						name: '提现记录',
 						path: 'me/tixian'
 					},
 					{
-						img: 'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744351185313tz.png',
+						img: 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744351185313tz.png',
 						name: '投资记录',
 						path:'me/myPosition'
 					},
 					{
-						img: 'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744351211877qd.png',
+						img: 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744351211877qd.png',
 						name: '签到记录',
 						path: 'me/qd-detail'
 					},
 					{
-						img: 'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744351240922lw.png',
+						img: 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744351240922lw.png',
 						name: '幸运福礼记录',
 						path: 'me/dingdan'
 					},
 					{
-						img: 'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744351259105jf.png',
+						img: 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744351259105jf.png',
 						name: '积分记录',
 						path: 'me/jfmx'
 					},
 					{
-						img: 'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744351306806kq.png',
+						img: 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744351306806kq.png',
 						name: '卡券记录',
 						path: 'me/kq'
 					}

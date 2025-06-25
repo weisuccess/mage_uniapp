@@ -23,7 +23,7 @@
 						<!-- <button class="edit-btn" @click.stop="edit">编辑</button> -->
 						<!-- <button class="edit-btn" @click.stop="moren(address.id)">默认</button> -->
 						<view class="" @click.stop="deleteAddress(address.id)">
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744474893067del.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744474893067del.png"
 								mode="widthFix" style="width: 40rpx;height: 50rpx;"></image>
 						</view>
 						<!-- <button class="delete-btn">删除</button> -->

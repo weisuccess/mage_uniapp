@@ -13,13 +13,13 @@
 				<view class="flex-around-center-wrap" v-if="user.vipGradeInfo">
 					<view class="text-align-c py20 fz20 mt10 br10" v-for="(item,index) in 10" :key="index"
 						v-if="index<num" style="width: 18%;background-color: #33CC33;border: 1px solid #aaa;">
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744534391322usdt.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744534391322usdt.png"
 							mode="widthFix" style="width: 40rpx;height: 40rpx;"></image>
 						<view class="color-fff">+{{user.vipGradeInfo.signInReward}}USDT</view>
 					</view>
 					<view class="text-align-c py20 fz20 mt10 br10" v-for="(item,index) in 10" :key="index"
 						v-if="index>num-1" style="width: 18%;background-color: #eee;border: 1px solid #aaa;">
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744534391322usdt.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744534391322usdt.png"
 							mode="widthFix" style="width: 40rpx;height: 40rpx;"></image>
 						<view class="">+{{user.vipGradeInfo.signInReward}}USDT</view>
 					</view>
@@ -47,7 +47,7 @@
 			<view style="width: 80vw; margin: 0 10vw; height: 40vh;border-radius: 20rpx;background-color: #fff;">
 				<view class="text-align-c  ml30">
 					<image
-						src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174487653877919ff456762cf0243b4426cc7bc8ddf61deca1b9d36116-rvB4r0@3x.png"
+						src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174487653877919ff456762cf0243b4426cc7bc8ddf61deca1b9d36116-rvB4r0@3x.png"
 						mode="widthFix" style="width: 100%; height: 400rpx;margin-top: -250rpx;"></image>
 					<view class="text-align-c fw700 fz40">签到成功</view>
 					<view class="vcenter fz28" style="line-height: 80rpx;color: #D91C0C;" v-if="user.vipGradeInfo">
@@ -230,7 +230,7 @@
 
 <style scoped lang="scss">
 	.content {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744534069895bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744534069895bg.png') no-repeat;
 		background-size: 100% 100%;
 		height: 100vh;
 		// color: #ffffff;

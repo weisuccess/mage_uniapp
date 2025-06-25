@@ -1,23 +1,23 @@
 <template>
 	<view class="content">
 		<view class=""
-			style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744980928733dt.png') no-repeat;background-size: 100% 100%;height: 600rpx;">
+			style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744980928733dt.png') no-repeat;background-size: 100% 100%;height: 600rpx;">
 			<view style="height: var(--status-bar-height);width: 100%;position: fixed;z-index: 999999;"></view>
 			<narBar :title="'来定投吧'" @back="toBack()" background="transparent" :rightTxt="'dtjl'" showRightBtn @dtjl="dtjl"></narBar>
 			<view class="vcenter" style="width:100%;height:30rpx;margin-top: var(--status-bar-height);"></view>
 			<view class="ml60 mt30">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744981211329ldtb.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744981211329ldtb.png" mode="widthFix"
 					style="width: 330rpx;height: 100rpx;"></image>
 				<view class="fz24">积少成多丨不惧波动丨长期增值</view>
 			</view>
 		</view>
-		<view class="text-align-c" style="width: 90%;background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744981295746sxdt.png');
+		<view class="text-align-c" style="width: 90%;background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744981295746sxdt.png');
 			margin-top: -200rpx;background-size: 100% 100%;margin-left: 2.5%;margin-right: 2.5%;padding:30rpx 2.5% 60rpx;">
 			<view class="fz40 fw700 lh80">-省心定投-</view>
 			<view class="mb30">分批买入，淡化择时，可作为长期财务规划</view>
 		</view>
 		<scroll-view scroll-y="true" style="height: 600rpx;">
-			<view class="text-align-c" style="width: 86%;background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744981555680tiao.png');
+			<view class="text-align-c" style="width: 86%;background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744981555680tiao.png');
 			background-size: 100% 100%;margin-left: 2.5%;margin-right: 2.5%;padding:30rpx 4.5% 60rpx;"
 				v-for="(item,index) in list" :key="index">
 				<view class="flex-between-center pb30" style="border-bottom: 1px dashed #ccc;">
@@ -36,7 +36,7 @@
 				</view>
 			</view>
 		</scroll-view>
-		<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744982658120dtys.png" mode="widthFix"
+		<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744982658120dtys.png" mode="widthFix"
 			style="width: 95%;margin: 30rpx 2.5%;height: 500rpx;"></image>
 		<uni-popup ref="popLine">
 			<view class="lh80 fw700"

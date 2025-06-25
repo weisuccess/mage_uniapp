@@ -20,7 +20,7 @@
 						</view>
 						<view class="flex-center-center">
 							<image
-								src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17446474094145bfb0ad931c8a11c6989882b3785938162f7ba5514029-a297Go@3x.png"
+								src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17446474094145bfb0ad931c8a11c6989882b3785938162f7ba5514029-a297Go@3x.png"
 								mode="widthFix" style="width: 50rpx;height: 50rpx;"></image>
 							<view class="ml10">
 								<view class="fw700 lh80 fz34">我的兑换</view>
@@ -30,7 +30,7 @@
 					</view>
 				</view>
 			</view>
-			<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744648014772lpdh.png" mode="widthFix"
+			<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744648014772lpdh.png" mode="widthFix"
 				style="width: 150rpx;height: 100rpx;" class="mt100 mx30"></image>
 			<scroll-view scroll-y="true" :style="{height:windowHeight+'px'}" style="width: 100%;">
 				<view class="flex-between-center-wrap" style="width: 95%;margin: 0 2.5%;">
@@ -40,10 +40,10 @@
 							style="width: 90%;height: 300rpx;margin: 10rpx 5% 0;">
 						</image>
 						<view class="color-fff pd30"
-							style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744648604135p.png') no-repeat;background-size: 100% 100%;margin-top: -20rpx;">
+							style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744648604135p.png') no-repeat;background-size: 100% 100%;margin-top: -20rpx;">
 							<view class="fz30 lh40">{{item.commodityName}}</view>
 							<view class="flex-start-center">
-								<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744648493315jf.png"
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744648493315jf.png"
 									mode="widthFix" style="width: 30rpx;height: 30rpx;">
 								</image>
 								<view class="ml5">
@@ -58,7 +58,7 @@
 					<zhini-pagination :totalPage="totalPage" :currentPage.sync="page" @pageNum="getNum"></zhini-pagination>
 				</view>
 				<view class="fz26 color-7C7C mt60 pb20">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1748621167202sy-2.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1748621167202sy-2.png" mode="widthFix"
 						style="width:80%;margin: 20rpx 10%;"></image>
 				</view>
 			</scroll-view>
@@ -227,7 +227,7 @@
 	.top {
 		width: 100%;
 		height: 400rpx;
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
 		background-size: 100% 100%;
 		margin-top: -10rpx;
 	}

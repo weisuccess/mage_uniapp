@@ -12,7 +12,7 @@
 					<view style="width: calc( 100% - 50rpx );margin:0px auto;">
 						<view class="vformitem">
 							<view class="vformtitle" style="padding: 0 40rpx;">
-								<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745854666257phone.png" style="width: 40rpx;height: 40rpx;"></image>
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854666257phone.png" style="width: 40rpx;height: 40rpx;"></image>
 								<input class="vinput" style="border: none;" type="text" v-model="loginInfo.telPhone"
 									maxlength="11" :placeholder="getLg('请输入UBI账户')" />
 							</view>
@@ -20,7 +20,7 @@
 						<view class="vsplit"></view>
 						<view class="vformitem">
 							<view class="vformtitle" style="padding: 0 40rpx;">
-								<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745854625568password.png" style="width: 30rpx;height: 30rpx;"></image>
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854625568password.png" style="width: 30rpx;height: 30rpx;"></image>
 								<view class="vcenter vinput" style="width:100%;display: flex;border: none;">
 									<view style="width:88%;height:100%;">
 										<input :type="showPassword ? 'text' : 'password'" v-model="loginInfo.password"
@@ -66,7 +66,7 @@
 								mode="aspectFit" style="width:36rpx;height: 36rpx;" v-if="!isck"
 								@click="checkboxChange"></image>
 							<image
-								src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745854089500sel.png"
+								src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854089500sel.png"
 								mode="aspectFit" style="width:36rpx;height: 36rpx;" v-if="isck"
 								@click="checkboxChange"></image>
 						</view>

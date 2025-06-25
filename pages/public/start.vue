@@ -78,7 +78,7 @@
 
 <style>
 	page {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744118506749start.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744118506749start.png') no-repeat;
 		background-size: 100% 100%
 	}
 </style>

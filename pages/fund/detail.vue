@@ -345,7 +345,7 @@
 </style>
 <style scoped lang="scss">
 	.content {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174410046676033CC33-bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174410046676033CC33-bg.png') no-repeat;
 		background-size: 100% 100%;
 		color: #3A3A3A;
 		// color: #ffffff;
@@ -353,7 +353,7 @@
 
 	.k {
 		// width: 90%;
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744290610523bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744290610523bg.png') no-repeat;
 		background-size: 100% 100%;
 		// box-shadow: 0 0 30rpx rgba(0, 0, 0, .2);
 		// height: 500rpx;

@@ -16,7 +16,7 @@
 		</view>
 		<scroll-view scroll-y="true" :style="{height:windowHeight-390+'px'}" class="mt250"
 			style="width: 100%;border-radius: 10rpx;" v-if="title=='运营制度'&&index!=0">
-			<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1748359268985yyzd1.png" mode="widthFix"
+			<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1748359268985yyzd1.png" mode="widthFix"
 				style="width: 100%;"></image>
 		</scroll-view>
 		<view class="" v-if="title!='运营制度'">
@@ -31,20 +31,20 @@
 			公司概况
 		</view>
 		<scroll-view scroll-y="true" style="width: 100%;height: 100vh;border-radius: 10rpx;" v-if="index==0">
-			<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744096743396gl1.png" mode="widthFix"
+			<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744096743396gl1.png" mode="widthFix"
 				style="width: 100%;"></image>
-			<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744096841537gl2.png" mode="widthFix"
+			<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744096841537gl2.png" mode="widthFix"
 				style="width: 100%;margin-top: -10rpx;"></image>
 		</scroll-view>
 		<scroll-view scroll-y="true" :style="{height:windowHeight-40+'px'}" style="width: 100%;border-radius: 10rpx;"
 			v-if="title=='U资产体验说明'&&index!=0">
-			<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744989889311Uzc.png" mode="widthFix"
+			<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744989889311Uzc.png" mode="widthFix"
 				style="width: 100%;"></image>
 		</scroll-view>
 		<scroll-view scroll-y="true" style="width: 100%;height: 100vh;border-radius: 10rpx;"
 			v-if="index!=0&&title == '公司概况'">
 			<view class="box">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745096593476js.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745096593476js.png" mode="widthFix"
 					style="width: 100%;height: 400rpx;"></image>
 				<view class="br16 lh50"
 					style="background-color: #fff;position: absolute;z-index: inherit;9;margin: -200rpx 2.5% 0;width: 90%;padding: 2.5%;">
@@ -59,11 +59,11 @@
 							理念深度融入日常运营的各个环节，专门设立“创新容错基金”，全力营造积极进取、包容开放的团队氛围，充分激发员工的无限创造力。
 						</view>
 						<view class="flex-around-center mt30">
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17450970093401.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17450970093401.png"
 								mode="widthFix" style="width: 30%;height: 200rpx;"></image>
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17450970208942.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17450970208942.png"
 								mode="widthFix" style="width: 30%;height: 200rpx;"></image>
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17450970299583.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17450970299583.png"
 								mode="widthFix" style="width: 30%;height: 200rpx;"></image>
 						</view>
 						<view class="">
@@ -82,56 +82,56 @@
 			<view style="">
 
 				<view class="" v-if="title=='财务保障'">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17486980083421.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17486980083421.png" mode="widthFix"
 						style="width: 100%;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17486980292982.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17486980292982.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17486980463233.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17486980463233.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17486980561044.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17486980561044.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17486980649665.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17486980649665.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
 				</view>
 
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744208567504yyjs.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744208567504yyjs.png" mode="widthFix"
 					v-if="title=='运营介绍'" style="width: 100%;"></image>
 				<view class="" v-if="title=='帮助中心'">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1748265234666bzzx.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1748265234666bzzx.png" mode="widthFix"
 						style="width: 100%;"></image>
 				</view>
 				<view class="" v-if="title=='隐私政策'">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174499210879064.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174499210879064.png" mode="widthFix"
 						style="width: 100%;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174499231791865.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174499231791865.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174499241856766.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174499241856766.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174499255092367.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174499255092367.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174499264569168.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174499264569168.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
 				</view>
 				<image src="https://cecece777.oss-cn-hongkong.aliyuncs.com/null/1738770228482安全保障.png" mode="widthFix"
 					v-if="title=='安全保障'" style="width: 100%;"></image>
 				<view class="" v-if="title=='服务协议'">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174447768463364.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174447768463364.png" mode="widthFix"
 						style="width: 100%;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174447778296865.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174447778296865.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174447793773466.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174447793773466.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174447799768467.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174447799768467.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174447811733168.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174447811733168.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
 				</view>
 				<view class="" v-if="title=='当前版本说明'">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174447863431372.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174447863431372.png" mode="widthFix"
 						style="width: 100%;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174447876277673.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174447876277673.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174447885573874.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174447885573874.png" mode="widthFix"
 						style="width: 100%;margin-top: -10rpx;"></image>
 				</view>
 			</view>
@@ -283,12 +283,12 @@
 	.top {
 		width: 100%;
 		height: 500rpx;
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
 		background-size: 100% 100%;
 	}
 
 	.bg2 {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174410046676033CC33-bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174410046676033CC33-bg.png') no-repeat;
 		background-size: 100% 100%;
 		color: #ffffff;
 	}

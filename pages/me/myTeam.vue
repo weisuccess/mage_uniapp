@@ -38,7 +38,7 @@
 									<view class="flex-start-center" v-if="list.marketAssetManageInfo">
 										<view class="mr10" v-if="index!=0">
 											<image
-												src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745570401342x.png"
+												src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745570401342x.png"
 												mode="widthFix" style="width: 30rpx;height: 30rpx;"
 												v-for="key in index-1"></image>
 										</view>
@@ -297,7 +297,7 @@
 </style>
 <style scoped lang="scss">
 	.top {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744536578948bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744536578948bg.png') no-repeat;
 		background-size: 100% 100%;
 		height: 450rpx;
 		padding-top: var(--status-bar-height);

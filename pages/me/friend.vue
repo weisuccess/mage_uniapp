@@ -3,7 +3,7 @@
 		<narBar :title="''" @back="toBack()" background="transparent"></narBar>
 		<scroll-view scroll-y>
 			<view class="" style="padding: 0 30rpx;">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744277363162logo.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744277363162logo.png" mode="widthFix"
 					style="width: 30%;height: 200rpx;margin: 0 35%;"></image>
 				<view class="color-33CC33 fw700 fz60 text-align-c lh100 mt30">邀请好友</view>
 				<view class="color-33CC33 fw700 fz60 text-align-c">领取UBI体验</view>
@@ -27,12 +27,12 @@
 					</view>
 					<view class="flex-center-center color-33CC33 lh100">
 						iPhone通用下载：{{list.anzhuoDownload}}
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744285610410copy.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744285610410copy.png"
 							mode="widthFix" class="ml10" style="width: 30rpx;height: 30rpx;" @click="copy(list.anzhuoDownload)"></image>
 					</view>
 					<view class="flex-center-center color-33CC33">
 						Android通用下载：{{list.iosDownload}}
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744285610410copy.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744285610410copy.png"
 							mode="widthFix" class="ml10" style="width: 30rpx;height: 30rpx;" @click="copy(list.iosDownload)"></image>
 					</view>
 					<!-- <view class="icon">
@@ -154,7 +154,7 @@
 </style>
 <style scoped lang="scss">
 	.content {
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744277196584invite.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744277196584invite.png') no-repeat;
 		background-size: 100% 100%;
 		height: 100vh;
 		color: #ffffff;

@@ -5,11 +5,11 @@
 
 		<view style="width: 100%;">
 			<view class="top">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744215334577q.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744215334577q.png" mode="widthFix"
 					style="width: 90%;margin:200rpx 5% 0;"></image>
 			</view>
 			<view class="my20 mt100 flex-start-center">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744215448189zc.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744215448189zc.png" mode="widthFix"
 					style="width: 100rpx;height: 80rpx;margin: 0 20rpx;" @click="active1()"></image>
 				<scroll-view scroll-x="true" show-scrollbar="false"
 					style="white-space: nowrap;display: flex;width: calc(100% - 160rpx);">
@@ -36,7 +36,7 @@
 								style="width: 100%;height: 100%;border-radius: 15rpx;">
 							</image>
 							<view class="lh40 text-align-c fz22 color-fff" style="position: absolute;z-index: 99;top: 0;
-								left: 0;background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744286028509jiaobiao.png') no-repeat ;
+								left: 0;background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744286028509jiaobiao.png') no-repeat ;
 								background-size: 100% 100%;width: 120rpx;height: 40rpx;">
 								{{item.opportunityLabel}}
 							</view>
@@ -77,7 +77,7 @@
 			<!-- <zhini-pagination :totalPage="totalPage" :currentPage.sync="page"
 					@pageNum="jfgetNum"></zhini-pagination> -->
 			<view class="fz26 color-7C7C mt60 pb20">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1748621167202sy-2.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1748621167202sy-2.png" mode="widthFix"
 					style="width:80%;margin: 20rpx 10%;"></image>
 			</view>
 		</scroll-view>
@@ -237,7 +237,7 @@
 	.top {
 		width: 100%;
 		height: 400rpx;
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744215207340bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744215207340bg.png') no-repeat;
 		background-size: 100% 100%;
 	}
 

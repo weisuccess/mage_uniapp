@@ -145,7 +145,7 @@
 	.top {
 		width: 100%;
 		height: 200rpx;
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
 		background-size: 100% 100%;
 		margin-top: -10rpx;
 	}

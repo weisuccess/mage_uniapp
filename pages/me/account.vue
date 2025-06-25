@@ -24,7 +24,7 @@
 				<view @click="toPage('me/editPassword')" class="border-bottom"
 					style="width:100%;height:100rpx;display: flex;justify-content: space-between;align-items: center;">
 					<view class="vcenter-left" style="width:50%;height:50rpx;">
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744212061498suo.png" mode=""
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744212061498suo.png" mode=""
 							style="width: 40rpx;height: 40rpx;margin-right: 10rpx;"></image>
 						<font class="fz26 lh100">修改登录密码</font>
 					</view>
@@ -35,7 +35,7 @@
 				<view class="border-bottom" @click="toPage('me/changePwd')"
 					style="width:100%;height:100rpx;display: flex;justify-content: space-between;align-items: center;">
 					<view class="vcenter-left" style="width:50%;height:50rpx;">
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744212098148jymm.png" mode=""
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744212098148jymm.png" mode=""
 							style="width: 40rpx;height: 40rpx;margin-right: 10rpx;"></image>
 						<font class="fz26 lh100">修改交易密码</font>
 					</view>
@@ -130,7 +130,7 @@
 				<view class="border-bottom" @click="toPage('me/dizhi')"
 					style="width:100%;height:100rpx;display: flex;justify-content: space-between;align-items: center;">
 					<view class="vcenter-left" style="width:50%;height:100rpx;">
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744212150398dz.png" mode="widthFix"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744212150398dz.png" mode="widthFix"
 							style="width: 40rpx;height: 40rpx;margin-right: 10rpx;"></image>
 						<font class="fz26 lh100">添加收货地址</font>
 					</view>
@@ -141,7 +141,7 @@
 				<view class="border-bottom" @click="toPage('home/about')"
 					style="width:100%;height:100rpx;display: flex;justify-content: space-between;align-items: center;">
 					<view class="vcenter-left" style="width:50%;height:100rpx;">
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744476036079r.png" mode="widthFix"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744476036079r.png" mode="widthFix"
 							style="width: 40rpx;height: 40rpx;margin-right: 10rpx;"></image>
 						<font class="fz26 lh100">关于UBI</font>
 					</view>
@@ -152,7 +152,7 @@
 				<view class="border-bottom"  @click="toPage('login/sbgl')"
 					style="width:100%;height:100rpx;display: flex;justify-content: space-between;align-items: center;">
 					<view class="vcenter-left" style="width:50%;height:100rpx;">
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744212199267sbgl.png" mode=""
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744212199267sbgl.png" mode=""
 							style="width: 40rpx;height: 40rpx;margin-right: 10rpx;"></image>
 						<font class="fz26 lh100">设备管理</font>
 					</view>
@@ -394,7 +394,7 @@
 	.top {
 		width: 100%;
 		height: 400rpx;
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
 		background-size: 100% 100%;
 	}
 

@@ -10,7 +10,7 @@
 		<narBar :title="getLg('幸运福利')" @back="toBack()" background="transparent"></narBar>
 		<scroll-view scroll-y="true" :style="{height:windowHeight+'px'}" style="width: 100%;">
 			<view class="">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745400416736xydzp.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745400416736xydzp.png" mode="widthFix"
 					style="width: 80%;margin: 120rpx 10% 10rpx;"></image>
 				<view class="flex-center-center">
 					<view class="mt20 color-fff  text-align-c br10 fz30"
@@ -23,9 +23,9 @@
 					</view>
 					<l-dialer ref="dialer" :num="user.lotteryFrequency" size="350" :prizeList="prizeList"
 						@click="onClick" @done="onDone" style="position: relative;z-index: 9;"
-						dial-style="color: rgba(60,48,158,0.7); padding: 40rpx;background-image: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744738246262zp.png')">
+						dial-style="color: rgba(60,48,158,0.7); padding: 40rpx;background-image: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744738246262zp.png')">
 					</l-dialer>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1745089825088dz.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745089825088dz.png" mode="widthFix"
 						style="margin-top: -27rpx;margin-left: 20rpx;z-index: 8;">
 					</image>
 				</view>
@@ -79,7 +79,7 @@
 			<view style="width: 80vw; margin: 0 10vw; height: auto;border-radius: 20rpx;background-color: #fff;
 			background: #fff;">
 				<image
-					src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17446445089418b06ff1a53b0fde9471867508df9d45bedfedcf2bfbb4-9AuSqg@3x.png"
+					src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17446445089418b06ff1a53b0fde9471867508df9d45bedfedcf2bfbb4-9AuSqg@3x.png"
 					mode="widthFix" style="width: 90%;margin: -150rpx 5% 0;"></image>
 				<view class="">
 					<view class="text-align-c fw700 fz40" v-if="prize.rewardType!=5">
@@ -89,7 +89,7 @@
 						{{prize.rewardLevel}}{{prize.rewardName}}<text
 							v-if="prize.rewardQuantity>1">*{{prize.rewardQuantity}}</text>
 					</view>
-					<view class="" v-if="prize.rewardType==1" @tap="lq" style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17446444755604227a48faa5b8a86e9a2e29784b31d1d0924eeb5534b0-aJITXz@3x.png') no-repeat;background-size: 100% 100%;
+					<view class="" v-if="prize.rewardType==1" @tap="lq" style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17446444755604227a48faa5b8a86e9a2e29784b31d1d0924eeb5534b0-aJITXz@3x.png') no-repeat;background-size: 100% 100%;
 						width: 60%;height: 100rpx;margin: 0 20% 50rpx;">
 						<view class="lh100 text-align-c color-fff">选择配货地址</view>
 					</view>
@@ -287,7 +287,7 @@
 	.content {
 		width: 100%;
 		min-height: 100vh;
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/17453418509056071143896366302672.jpg') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17453418509056071143896366302672.jpg') no-repeat;
 		background-size: 100% 100%;
 		position: relative;
 	}

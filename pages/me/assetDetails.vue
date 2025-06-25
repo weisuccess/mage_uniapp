@@ -177,7 +177,7 @@
 	.box {
 		width: 95%;
 		padding: 2.5%;
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744214068681bg.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744214068681bg.png') no-repeat;
 		background-size: 100% 100%;
 	}
 

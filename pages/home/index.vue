@@ -7,7 +7,7 @@
 			<view class="flex-between-center" style="top: var(--status-bar-height);color: #fff;
 				width: 100%;padding: 20rpx 0;position: fixed;background-color: #27AE50;z-index: 999;">
 				<view style="width: 30%;padding: 3rpx 0 3rpx 20rpx;">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744098531844logo1.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744098531844logo1.png" mode="widthFix"
 						style="width: 200rpx;height: 60rpx;"></image>
 				</view>
 				<view class="br10 color-999 fz26" style="width: 45%;background-color: #fff;padding: 15rpx 20rpx;"
@@ -16,17 +16,17 @@
 					<!-- <uni-easyinput prefixIcon="search" placeholder="请输入内容" disabled=""></uni-easyinput> -->
 				</view>
 				<view class="" style="width: 25%;display: flex;justify-content: flex-end;">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744099304954qiandao@3x.png"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744099304954qiandao@3x.png"
 						style="width: 45rpx;height: 45rpx;" mode="widthFix" @click="qd">
 					</image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744099335585kefu@3x.png"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744099335585kefu@3x.png"
 						style="width: 45rpx;height: 45rpx;margin: 0 30rpx;" mode="widthFix" @click="kefu"></image>
 				</view>
 			</view>
 			<view style="height: var(--status-bar-height);width: 100%;"></view>
 			<view class="top" style="margin-top: 135rpx;">
 				<view class="laba" @click="toPage('me/notice')">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744099159637gg@3x.png"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744099159637gg@3x.png"
 						style="width: 55rpx;height: 55rpx;margin: 0 10rpx;" mode="widthFix">
 					</image>
 					<uni-notice-bar :speed="30" single scrollable :text="notice" background-color="transparent"
@@ -35,7 +35,7 @@
 				<view class="" style="flex-wrap: wrap;display: flex;align-items: center;">
 					<view class="vcenter menu_item" v-for="(item,index) in menuList" :key="index"
 						@click="toPage(item.path,index)">
-						<image :src="'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/'+item.icon+'.png'"
+						<image :src="'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/'+item.icon+'.png'"
 							style="height: 68rpx;width: 20%;" mode="heightFix">
 						</image>
 						<view class="text_1" style="color: #fff;">{{item.txt}}</view>
@@ -54,7 +54,7 @@
 			<view class="" style="margin-top: 60rpx;">
 				<view class="news">
 					<view class="flex-between-center pd30"
-						style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744381673565bg1.png') no-repeat;background-size: 100% 100%;">
+						style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744381673565bg1.png') no-repeat;background-size: 100% 100%;">
 						<view class="">
 							<view class="fz38 fw700 mb10">快速了解我们</view>
 							<view class="fz26" style="color:#646464;">捕捉投资机会</view>
@@ -87,7 +87,7 @@
 
 				</view>
 				<view class=""
-					style="width: 90%;margin: 30rpx 2.5%;padding: 2.5%; background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744381816526bg2.png') no-repeat;background-size: 100% 100%;">
+					style="width: 90%;margin: 30rpx 2.5%;padding: 2.5%; background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744381816526bg2.png') no-repeat;background-size: 100% 100%;">
 					<view class="flex-start-center">
 						<view class="ml10 mr10 br5 pd10" :class="isIndex1==1?'active-33CC33':'active-fff'"
 							@click="check1(1)">
@@ -116,7 +116,7 @@
 											style="width: 100%;height: 100%;border-radius: 15rpx;">
 										</image>
 										<view class="lh40 text-align-c fz22 color-fff" style="position: absolute;z-index: 99;top: 0;
-									left: 0;background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744286028509jiaobiao.png') no-repeat ;
+									left: 0;background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744286028509jiaobiao.png') no-repeat ;
 									background-size: 100% 100%;width: 120rpx;height: 40rpx;">
 											{{item.opportunityLabel}}
 										</view>
@@ -187,7 +187,7 @@
 											style="width: 100%;height: 100%;border-radius: 15rpx;">
 										</image>
 										<view class="lh40 text-align-c fz22 color-fff" style="position: absolute;z-index: 99;top: 0;
-									left: 0;background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744286028509jiaobiao.png') no-repeat ;
+									left: 0;background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744286028509jiaobiao.png') no-repeat ;
 									background-size: 100% 100%;width: 120rpx;height: 40rpx;">
 											{{item.opportunityLabel}}
 										</view>
@@ -229,7 +229,7 @@
 					</swiper>
 				</view>
 				<view class="" style="width: 90%;margin: 30rpx 2.5%;padding: 30rpx; ">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744532915006dx.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744532915006dx.png" mode="widthFix"
 						style="width: 150rpx;height: 100rpx;margin-left: 10rpx;"></image>
 					<swiper indicator-active-color="#D40000" circular autoplay
 						style="background-color: #fff;width: 90%;padding: 0 5%;border-radius: 10rpx;height: 400rpx;">
@@ -246,7 +246,7 @@
 											style="width: 100%;height: 100%;border-radius: 15rpx;">
 										</image>
 										<view class="lh40 text-align-c fz22 color-fff" style="position: absolute;z-index: 99;top: 0;
-									left: 0;background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744286028509jiaobiao.png') no-repeat ;
+									left: 0;background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744286028509jiaobiao.png') no-repeat ;
 									background-size: 100% 100%;width: 120rpx;height: 40rpx;">
 											{{item.opportunityLabel}}
 										</view>
@@ -290,30 +290,30 @@
 				<view class="fw700 ml30 fz40">独家陪伴，为您领航</view>
 				<view class="flex-around-center mt30" style="">
 					<view class="" @click="toNotice(1)"
-						style="width: 48%; background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744875089096h-bg.png');background-size: 100% 100%;">
+						style="width: 48%; background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744875089096h-bg.png');background-size: 100% 100%;">
 						<view class="flex-start-center my20">
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744875106439h.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744875106439h.png"
 								mode="widthFix" class="ml30" style="width: 50rpx;height: 50rpx;"></image>
 							<view class="ml10 fz35 fw700"> <text style="color: #A47930;">观点</text>·览阅</view>
 						</view>
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744875143059h-bo.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744875143059h-bo.png"
 							mode="widthFix" style="width: 80%;margin: 5% 10%;height: 400rpx;"></image>
 					</view>
 					<view class="" @click="toNotice(2)"
-						style="width: 48%; background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744875287061h1-bg.png');background-size: 100% 100%;">
+						style="width: 48%; background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744875287061h1-bg.png');background-size: 100% 100%;">
 						<view class="flex-start-center my20">
-							<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744875263975h1.png"
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744875263975h1.png"
 								mode="widthFix" class="ml30" style="width: 50rpx;height: 50rpx;"></image>
 							<view class="ml10 fz35 fw700"> <text style="color: #AF5F3D;">百科</text>·愈学</view>
 						</view>
-						<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744875312823h1-bo.png"
+						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744875312823h1-bo.png"
 							mode="widthFix" style="width: 80%;margin: 5% 10%;height: 400rpx;"></image>
 					</view>
 				</view>
 				<view class="fz26 color-7C7C mt100 w100">
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1748621103593sy-1.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1748621103593sy-1.png" mode="widthFix"
 						style="width: 80%;margin: 20rpx 10%;" @click="toPage('me/tyj/index')"></image>
-					<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1748621167202sy-2.png" mode="widthFix"
+					<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1748621167202sy-2.png" mode="widthFix"
 						style="width:80%;margin: 20rpx 10%;"></image>
 
 				</view>
@@ -609,7 +609,7 @@
 	.top {
 		width: 100%;
 		height: 400rpx;
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
 		background-size: 100% 100%;
 	}
 

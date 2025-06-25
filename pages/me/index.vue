@@ -45,7 +45,7 @@
 			</view>
 			<view class="main" style="margin-top: 30rpx;padding: 0;">
 				<view
-					style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744210539520zc-bg.png') no-repeat;width: 100%;background-size: 100% 100%;">
+					style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744210539520zc-bg.png') no-repeat;width: 100%;background-size: 100% 100%;">
 					<view style="width: 96%;margin: 0 1%;padding: 40rpx 1%;" class="flex-around-center">
 						<view class="ml30" style="border-right: 2px dashed #ccc;width: 50%;">
 							<view class="flex-start-center">
@@ -80,13 +80,13 @@
 					style="background-color: #fff;width: 90%;margin: 2.5%;padding: 2.5%;">
 					<view class="menu_item" v-for="(item,index) in menuList" :key="index"
 						@click="toPage(item.path,index)">
-						<image :src="'https://ubi-res.oss-cn-beijing.aliyuncs.com/null/'+item.icon+'.png'"
+						<image :src="'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/'+item.icon+'.png'"
 							class="image_2 mt10" mode="heightFix"></image>
 						<view class="text_1">{{item.txt}}</view>
 					</view>
 				</view>
 				<view class="fz40 fw700 lh100 pl40 mt30">热门活动</view>
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744211307592zcgl.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744211307592zcgl.png" mode="widthFix"
 					style="width: 95%;margin: 0 2.5%;" @click="tyj"></image>
 				<!-- <view class="vcenter" style="flex-wrap: wrap;margin-top: 30rpx;">
 					<view class="vcenter menu_item" v-for="(item,index) in menuList2" :key="index"
@@ -162,7 +162,7 @@
 				</view>
 			</uni-popup>
 			<view class="fz26 color-7C7C mt60 pb20">
-				<image src="https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1748621167202sy-2.png" mode="widthFix"
+				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1748621167202sy-2.png" mode="widthFix"
 					style="width:80%;margin: 20rpx 10%;"></image>
 			</view>
 			<view style="color: #000;">
@@ -476,7 +476,7 @@
 	.top {
 		width: 100%;
 		height: 400rpx;
-		background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
+		background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/174409903861872@3x.png') no-repeat;
 		background-size: 100% 100%;
 	}
 

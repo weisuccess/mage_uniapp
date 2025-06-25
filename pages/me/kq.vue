@@ -7,7 +7,7 @@
 			<view :class="isActive==2?'active':''" @click="check(2)">已使用</view>
 		</view>
 		<scroll-view scroll-y="true" class="box" :style="{height:windowHeight+'px'}" @scrolltolower="reachBottom">
-			<view class="flex-center-center" style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744736617359kq.png') no-repeat;background-size: 100% 100%;
+			<view class="flex-center-center" style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744736617359kq.png') no-repeat;background-size: 100% 100%;
 					padding: 50rpx 0 60rpx;position: relative;" v-for="(item,index) in list" :key="index">
 				<view class="color-33CC33 fz26 mt5" style="position: absolute;top: 0;left: 30rpx;">全品类通用</view>
 				<view class="color-33CC33" style="width: 25%;text-align: center;">

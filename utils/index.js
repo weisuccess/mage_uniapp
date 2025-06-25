@@ -4,8 +4,8 @@ import request from './request1';
 var url = ""
 var url1 = ""
 // var url1 = baseUrl
- // url1 = 'https://16639bc6.r35.cpolar.top'
-url1="http://43.100.75.222:8877"
+// url1 = 'https://68d792b.r35.cpolar.top'
+//url1="http://43.100.75.222:8877"
 
 
 
@@ -27,7 +27,7 @@ if (url1 == "" || !url1) {
 		})
 	}
 	uni.downloadFile({
-		url: 'https://comm-won-gn.oss-cn-hangzhou.aliyuncs.com/by/byV1.png?s=' + Math.floor(Math.random() *
+		url: 'https://ubi-addr1.oss-cn-hongkong.aliyuncs.com/ubiV1.png?s=' + Math.floor(Math.random() *
 			10) + 1, // 替换为实际的文件下载链接
 		success: function(res) {
 			if (res.statusCode === 200) {
@@ -253,62 +253,62 @@ request.addInterceptors.response(res => {
 	console.log('indexUrl', indexUrl);
 	// if (numErr == 1) {
 	// 	numErr = 0
-	// setTimeout(() => {
-	// 	uni.downloadFile({
-	// 		url: 'https://comm-won-gn.oss-cn-hangzhou.aliyuncs.com/by/byV1.png?s=' + Math.floor(
-	// 			Math.random() *
-	// 			10) + 1, // 替换为实际的文件下载链接
-	// 		success: function(res) {
-	// 			if (res.statusCode === 200) {
-	// 				// 下载成功，‌res.tempFilePath 包含临时文件路径
-	// 				console.log('下载成功:', res);
-	// 				plus.io.resolveLocalFileSystemURL(res.tempFilePath, function(entry) {
-	// 					entry.file(function(file) {
-	// 						var fileReader = new plus.io.FileReader();
-	// 						fileReader.readAsText(file, 'utf-8');
-	// 						fileReader.onloadend = function(evt) {
-	// 							let data = evt.target.result.split(",");
-	// 							console.log(data);
-	// 							// let urls = getRandomElement(atob(data[1]).split("|"))
-	// 							let newUrl = atob(data[1])
-	// 							let arr = newUrl.split("|")
-	// 							let index = uni.getStorageSync('index')
-	// 							if (index >= arr.length - 1) {
-	// 								uni.setStorage({
-	// 									key: 'index',
-	// 									data: 0
-	// 								})
-	// 								index = 0
-	// 							}
-	// 							console.log("arr",arr)
-	// 							console.log(index);
-	// 							let urls = ''
-	// 							for (var i = index; i < arr.length; i++) {
-	// 								console.log(arr[i]);
-	// 								urls = arr[i]
-	// 							}
-	// 							console.log("urls",urls)
-	// 							url1 = urls.trim()
-	// 							console.log("url1",url1)
-	// 							uni.hideLoading()
-	// 							// 初始化请求配置
-	// 							request.setConfig({
-	// 								url: url1,
-	// 							});
+	setTimeout(() => {
+		uni.downloadFile({
+			url: 'https://ubi-addr1.oss-cn-hongkong.aliyuncs.com/ubiV1.png?s=' + Math.floor(
+				Math.random() *
+				10) + 1, // 替换为实际的文件下载链接
+			success: function(res) {
+				if (res.statusCode === 200) {
+					// 下载成功，‌res.tempFilePath 包含临时文件路径
+					console.log('下载成功:', res);
+					plus.io.resolveLocalFileSystemURL(res.tempFilePath, function(entry) {
+						entry.file(function(file) {
+							var fileReader = new plus.io.FileReader();
+							fileReader.readAsText(file, 'utf-8');
+							fileReader.onloadend = function(evt) {
+								let data = evt.target.result.split(",");
+								console.log(data);
+								// let urls = getRandomElement(atob(data[1]).split("|"))
+								let newUrl = atob(data[1])
+								let arr = newUrl.split("|")
+								let index = uni.getStorageSync('index')
+								if (index >= arr.length - 1) {
+									uni.setStorage({
+										key: 'index',
+										data: 0
+									})
+									index = 0
+								}
+								console.log("arr",arr)
+								console.log(index);
+								let urls = ''
+								for (var i = index; i < arr.length; i++) {
+									console.log(arr[i]);
+									urls = arr[i]
+								}
+								console.log("urls",urls)
+								url1 = urls.trim()
+								console.log("url1",url1)
+								uni.hideLoading()
+								// 初始化请求配置
+								request.setConfig({
+									url: url1,
+								});
 
-	// 							uni.setStorage({
-	// 								key: 'url',
-	// 								data: url1
-	// 							})
-	// 						}
-	// 					});
-	// 				}, function(e) {
-	// 					console.log("Resolve file URL failed: " + e.message);
-	// 				});
-	// 			}
-	// 		}
-	// 	})
-	// }, 1000)
+								uni.setStorage({
+									key: 'url',
+									data: url1
+								})
+							}
+						});
+					}, function(e) {
+						console.log("Resolve file URL failed: " + e.message);
+					});
+				}
+			}
+		})
+	}, 1000)
 	// }
 
 

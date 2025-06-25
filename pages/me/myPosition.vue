@@ -2,7 +2,7 @@
 	<view class="">
 		<view class="content">
 			<view class=""
-				style="background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744210203337top-bg.png') no-repeat;background-size: 100% 100%;height: 400rpx;">
+				style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744210203337top-bg.png') no-repeat;background-size: 100% 100%;height: 400rpx;">
 				<view style="height: var(--status-bar-height);width: 100%;position: fixed;z-index: 999999;"></view>
 				<narBar :title="'投资明细'" @back="toBack()" background="transparent"></narBar>
 			</view>
@@ -46,7 +46,7 @@
 										style="width: 100%;height: 100%;border-radius: 15rpx;">
 									</image>
 									<view class="lh40 text-align-c fz22 color-fff" style="position: absolute;z-index: 99;top: 0;
-									left: 0;background: url('https://ubi-res.oss-cn-beijing.aliyuncs.com/null/1744286028509jiaobiao.png') no-repeat ;
+									left: 0;background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744286028509jiaobiao.png') no-repeat ;
 									background-size: 100% 100%;width: 120rpx;height: 40rpx;">
 										{{item.positionLabel}}
 									</view>
