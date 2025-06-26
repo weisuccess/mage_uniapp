@@ -19,22 +19,17 @@
 			<view class=" fw700 fz40 lh80">兑换条件</view>
 			<view class="flex-start-start py10">
 				<view style="width: 150rpx;">兑换次数</view>
-				<view class="">同一用户、身份证号、手机号、终端终身 限兑10次</view>
+				<view class="">同一用户、身份证号、手机号、终端终身 限兑{{arr.exchangeFrequency}}次</view>
 			</view>
 			<view class="flex-start-start py10">
 				<view style="width: 150rpx;">兑后须知</view>
-				<view class="">虚拟权益兑换后不可退换</view>
+				<view class="">{{arr.redemptionNotice}}</view>
 			</view>
 		</view>
 		<view class="br20 fz28" style="background-color: #fff;width: 90%;margin:30rpx 2.5% 0;padding: 2.5%;">
 			<view class=" fw700 fz40 lh80">使用说明</view>
 			<view class="">
-				当您成功领取代金券后，它将被自动存入您的微信卡包中。
-				在微信卡包内，您可以方便地查看、管理和使用您的各类优
-				惠券和代金券。当您需要使用时，只需在付款时出示相应的
-				二维码，即可轻松完成抵扣。 <br>
-				1、对于已绑定微信会员的用户，可以选择将代金券“放入微
-				信卡包”，这样将极大提升使用的便捷性。
+				{{arr.useExplanation}}
 			</view>
 		</view>
 

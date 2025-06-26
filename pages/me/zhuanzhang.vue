@@ -153,14 +153,14 @@
 					url: '/app/transferAuditInfo/getTransfer',
 					data: this.outData,
 					success: rsp => {
-						uni.showToast({
-							title: rsp.message,
-							icon: 'none'
-						})
 						if (rsp.code == 200) {
 							this.getList()
 							this.outData.payPassword=''
 						}
+						uni.showToast({
+							title: rsp.message,
+							icon: 'none'
+						})
 					}
 				})
 			},
