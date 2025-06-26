@@ -305,14 +305,14 @@
 					url: '/app/payoutsAuditInfo/submitPayouts',
 					data: this.outData,
 					success: rsp => {
-						uni.showToast({
-							title: rsp.message,
-							icon: 'none'
-						})
 						if (rsp.code == 200) {
 							this.show = false
 							this.getList()
 						}
+						uni.showToast({
+							title: rsp.message,
+							icon: 'none'
+						})
 					}
 				})
 			},
