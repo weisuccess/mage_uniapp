@@ -257,9 +257,20 @@
 			// 	})
 			// },
 			submit(e) {
-				uni.switchTab({
-					url:'/pages/home/index'
-				})
+				uni.showModal({
+					title: '提示',
+					content: '充值流程已发起，请等待~',
+					showCancel:false,
+					success: function (res) {
+						if (res.confirm) {
+							console.log('用户点击确定');
+							uni.switchTab({
+								url:'/pages/home/index'
+							})
+						} 
+					}
+				});
+				
 				// this.outData.payPassword = e
 				// if (uni.getStorageSync('getUser').isDelete == 1) {
 				// 	uni.showToast({
