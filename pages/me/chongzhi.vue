@@ -259,7 +259,7 @@
 			submit(e) {
 				uni.showModal({
 					title: '提示',
-					content: '充值流程已发起，请等待~',
+					content: '已完成，请等待审核',
 					showCancel:false,
 					success: function (res) {
 						if (res.confirm) {

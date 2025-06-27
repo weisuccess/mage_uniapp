@@ -93,7 +93,7 @@
 				<view class="text-align-r" v-if="isActive==0">
 					<view class="flex-between-start pd20 " style="border-bottom: 1px solid #D5D5D5;">
 						<view class="fz28 fw500" style="padding:0 20rpx;">资产名称</view>
-						<view style="font-size: 24rpx;color: #2F2B2B;max-width: 70%;">{{arr.title}}</view>
+						<view style="font-size: 24rpx;color: #2F2B2B;max-width: 70%;text-align: start;">{{arr.title}}</view>
 					</view>
 					<view class="flex-between-start pd20 " style="border-bottom: 1px solid #D5D5D5;">
 						<view class="fz28 fw500" style="padding:0 20rpx;">资产规模</view>
