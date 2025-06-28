@@ -26,12 +26,12 @@
 				<view class="">{{arr.redemptionNotice}}</view>
 			</view>
 		</view>
-		<view class="br20 fz28" style="background-color: #fff;width: 90%;margin:30rpx 2.5% 0;padding: 2.5%;">
+		<!-- <view class="br20 fz28" style="background-color: #fff;width: 90%;margin:30rpx 2.5% 0;padding: 2.5%;">
 			<view class=" fw700 fz40 lh80">产品说明</view>
 			<view class="">
 				{{arr.useExplanation}}
 			</view>
-		</view>
+		</view> -->
 
 		<view class="py50">
 			<view class="text-align-c color-fff ts-btn" style="width: 90%;margin: 0 5%;"
