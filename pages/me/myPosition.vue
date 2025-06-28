@@ -10,19 +10,19 @@
 			<view class="text-align-c"
 				style="width: 90%;background: rgba(255,255,255,.8);margin-right: 2.5%;margin-left: 2.5%;margin-top: -250rpx;padding:30rpx 2.5%;border-radius: 20rpx;box-shadow: 0 3rpx 6rpx rgba(0, 0, 0, 0.2);">
 				<view class="">累计投资（USDT）</view>
-				<view class="fw700 lh100 fz40">{{incomeDetail.investmentAmount}}</view>
+				<view class="fw700 lh100 fz40">{{incomeDetail.investmentAmount.toFixed(2)}}</view>
 				<view class="flex-around-center">
 					<view class="">
 						<view class="">最新收益（USDT）</view>
-						<view class="fw700 lh100 fz40">{{incomeDetail.today}}</view>
+						<view class="fw700 lh100 fz40">{{incomeDetail.today.toFixed(2)}}</view>
 					</view>
 					<view class="">
 						<view class="">累计收益（USDT）</view>
-						<view class="fw700 lh100 fz40">{{incomeDetail.earnings}}</view>
+						<view class="fw700 lh100 fz40">{{incomeDetail.earnings.toFixed(2)}}</view>
 					</view>
 				</view>
 				<view class="br60 lh80 flex-center-center" style="background-color: #E9E9E9;width: 90%;margin: 30rpx 5% ;">
-					持仓待收益（USDT）<text class="fw700 fz40"> {{incomeDetail.toBeCollected}}</text>
+					持仓待收益（USDT）<text class="fw700 fz40"> {{incomeDetail.toBeCollected.toFixed(2)}}</text>
 				</view>
 			</view>
 			<view style="width: 90%;border-radius: 30rpx 30rpx 0 0;margin: var(--status-bar-height) 5% 0;">
