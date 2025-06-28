@@ -27,7 +27,7 @@
 			</view>
 		</view>
 		<view class="br20 fz28" style="background-color: #fff;width: 90%;margin:30rpx 2.5% 0;padding: 2.5%;">
-			<view class=" fw700 fz40 lh80">使用说明</view>
+			<view class=" fw700 fz40 lh80">产品说明</view>
 			<view class="">
 				{{arr.useExplanation}}
 			</view>
