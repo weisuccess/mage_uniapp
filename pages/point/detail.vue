@@ -13,17 +13,17 @@
 		</view>
 		<view class="br20 " style="background-color: #fff;width: 90%;margin:30rpx 2.5% 0;padding: 2.5%;">
 			<view class=" fw700 py10 fz40 lh80">礼品介绍</view>
-			<rich-text :nodes="arr.commodityIntroduce"></rich-text>
+			<rich-text :nodes="arr.commodityIntroduce" style="word-break: break-all"></rich-text>
 		</view>
 		<view class="br20 fz28" style="background-color: #fff;width: 90%;margin:30rpx 2.5% 0;padding: 2.5%;">
 			<view class=" fw700 fz40 lh80">兑换条件</view>
 			<view class="flex-start-start py10">
-				<view style="width: 150rpx;">兑换次数</view>
-				<view class="">同一用户、身份证号、手机号、终端终身 限兑{{arr.exchangeFrequency}}次</view>
+				<view style="width: 20%;">兑换次数</view>
+				<view class="" style="width: 70%;">同一用户、身份证号、手机号、终端终身 限兑{{arr.exchangeFrequency}}次</view>
 			</view>
 			<view class="flex-start-start py10">
-				<view style="width: 150rpx;">兑后须知</view>
-				<view class="">{{arr.redemptionNotice}}</view>
+				<view  style="width: 20%;">兑后须知</view>
+				<view  style="width: 70%;">{{arr.redemptionNotice}}</view>
 			</view>
 		</view>
 		<!-- <view class="br20 fz28" style="background-color: #fff;width: 90%;margin:30rpx 2.5% 0;padding: 2.5%;">
