@@ -106,12 +106,12 @@
 						id: this.sel.id
 					},
 					success: rsp => {
+						this.close()
+						this.cashTreasureRegularInvestmentInfo()
 						uni.showToast({
 							title: rsp.message,
 							icon: 'none'
 						})
-						this.close()
-						this.cashTreasureRegularInvestmentInfo()
 					},
 				})
 			},
