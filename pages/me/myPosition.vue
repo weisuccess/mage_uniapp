@@ -141,6 +141,7 @@
 						this.incomeDetail.today = this.incomeDetail.today.toFixed(2)
 						this.incomeDetail.earnings = this.incomeDetail.earnings.toFixed(2)
 						this.incomeDetail.toBeCollected = this.incomeDetail.toBeCollected.toFixed(2)
+						
 					}
 				})
 			},

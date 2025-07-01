@@ -4,8 +4,8 @@ import request from './request1';
 var url = ""
 var url1 = ""
 // var url1 = baseUrl
-// url1 = 'https://68d792b.r35.cpolar.top'
-//url1="http://43.100.75.222:8877"
+// url1 = 'https://7f208226.r35.cpolar.top'
+url1="http://api.ubi9001.com"
 
 
 
@@ -76,6 +76,7 @@ if (url1 == "" || !url1) {
 								uni.request({
 									url: url1 + '/app/versionHistory/query', //仅为示例，并非真实接口地址。
 									success: (res) => {
+										console.log(url1 + '/app/versionHistory/query');
 										console.log(res);
 										console.log(res.data.data.version, '版本号', widgetInfo.version);
 										if (res.data.data.version != widgetInfo.version) {
