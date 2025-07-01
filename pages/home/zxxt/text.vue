@@ -1,5 +1,5 @@
 <template>
-	<view :class="index==0?'bg1':title=='运营制度'? 'bg3':'bg2'" style="height: 100vh;">
+	<view :class="index==0?'bg1':title=='运营制度'? 'bg3':title=='公司概况'? 'bg3':'bg2'" style="height: 100vh;">
 		<narBar :title="getLg(title)" @back="toBack()" v-if="index!=0&&index!=2&&title!='运营制度'"></narBar>
 
 		<view class="top" v-if="title=='运营制度'&&index!=0">
@@ -28,7 +28,7 @@
 		</view>
 		<view class="w100 text-align-c" v-if="title == '公司概况'"
 			style="margin-top: var(--status-bar-height);position: fixed;top: 20rpx;z-index: 98;">
-			公司概况
+			公司介绍
 		</view>
 		<scroll-view scroll-y="true" style="width: 100%;height: 100vh;border-radius: 10rpx;" v-if="index==0">
 			<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744096743396gl1.png" mode="widthFix"
@@ -50,13 +50,8 @@
 					style="background-color: #fff;position: absolute;z-index: inherit;9;margin: -200rpx 2.5% 0;width: 90%;padding: 2.5%;">
 					<scroll-view scroll-y="true" :style="{height:windowHeight-150+'px'}"
 						bindscrolltolower="onReachBottom">
-						<view class="" style="">
-							UBI资产管理公司于2015 年法国巴黎正式成立，UBI资产管理公司精准切入潜力巨大的“不良资产 + 跨境” 细分市场。公司秉持“以跨境视角激活沉睡资产，凭借创新思维创造可持续价值”
-							的使命，矢志不渝地朝着在 2030 年前跻身全球十大跨境不良资产服务提供商的目标奋进，力求全方位树立行业 ESG 新标杆。
-							UBI
-							资产管理公司成功获取法国金融市场管理局(AMF)颁发的首张牌照，在行业准入方面迈出坚实的第一步，到顺利推出不良资产基金并在市场中崭露头角。随后，公司整合先进的估值系统，实现业务流程的智能化升级，并在中国证监会QFI批复资格备案切实构建起中法双主场运营模式，为业务的持续稳定拓展奠定了坚实基础。
-							UBI 将细节(精细风控)、突破(勇于创新)、对话(深度客户共创)的 “3D 精神”作为行动准则。公司将 ESG
-							理念深度融入日常运营的各个环节，专门设立“创新容错基金”，全力营造积极进取、包容开放的团队氛围，充分激发员工的无限创造力。
+						<view class="mt60" style="">
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17513627162061.png" mode="widthFix" style="width: 100%;"></image>
 						</view>
 						<view class="flex-around-center mt30">
 							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17450970093401.png"
@@ -66,9 +61,8 @@
 							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17450970299583.png"
 								mode="widthFix" style="width: 30%;height: 200rpx;"></image>
 						</view>
-						<view class="">
-							在投资理念上，UBI聚焦于法律瑕疵修复、产业协同重组、ESG
-							价值重塑这三大关键维度。依托强大的技术平台、高度专业的复合型团队、严谨完善的合规体系以及广泛深厚的资源网络，精心构建“三维价值发现” 系统，精准挖掘不良资产中的潜在价值。
+						<view class="mt60">
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17513627752552.png" mode="widthFix" style="width: 100%;"></image>
 						</view>
 					</scroll-view>
 				</view>
