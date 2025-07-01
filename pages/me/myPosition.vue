@@ -10,13 +10,7 @@
 			<view class="text-align-c"
 				style="width: 90%;background: rgba(255,255,255,.8);margin-right: 2.5%;margin-left: 2.5%;margin-top: -250rpx;padding:30rpx 2.5%;border-radius: 20rpx;box-shadow: 0 3rpx 6rpx rgba(0, 0, 0, 0.2);">
 				<view class="">累计投资（USDT）</view>
-<<<<<<< .mine
 				<view class="fw700 lh100 fz40">{{incomeDetail.investmentAmount}}</view>
-
-=======
-				<view class="fw700 lh100 fz40">
-					{{incomeDetail.investmentAmount}}</view>
->>>>>>> .theirs
 				<view class="flex-around-center">
 					<view class="">
 						<view class="">最新收益（USDT）</view>
@@ -143,19 +137,10 @@
 					url: "/app/positionUser/incomeDetails",
 					success: rsp => {
 						this.incomeDetail = rsp.data
-<<<<<<< .mine
 						this.incomeDetail.investmentAmount = this.incomeDetail.investmentAmount.toFixed(2)
 						this.incomeDetail.today = this.incomeDetail.today.toFixed(2)
 						this.incomeDetail.earnings = this.incomeDetail.earnings.toFixed(2)
 						this.incomeDetail.toBeCollected = this.incomeDetail.toBeCollected.toFixed(2)
-						
-=======
-						this.incomeDetail.investmentAmount=this.incomeDetail.investmentAmount.toFixed(2)
-						this.incomeDetail.today=this.incomeDetail.today.toFixed(2)
-						this.incomeDetail.earnings=this.incomeDetail.earnings.toFixed(2)
-						this.incomeDetail.toBeCollected=this.incomeDetail.toBeCollected.toFixed(2)
-
->>>>>>> .theirs
 					}
 				})
 			},
