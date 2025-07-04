@@ -8,7 +8,7 @@
 			<uni-collapse-item :border="false" v-for="(item,index) in list" :key="index">
 				<template v-slot:title>
 					<view class="vcenter-left pd20">
-						<image :src="item.titleImage" mode="aspectFill" style="width: 150rpx;height: 100rpx;"></image>
+						<image :src="item.titleImage" style="width: 150rpx;height: 100rpx;"></image>
 						<view class="lh50 ml10" style="max-width: calc(100% - 180rpx);">
 							<view class="color-000 fz26 fw700 ">{{item.title}}</view>
 							<view class="fz22">{{item.createTime | dateFormat}}</view>
