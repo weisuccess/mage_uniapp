@@ -21,8 +21,8 @@
 			background-size: 100% 100%;margin-left: 2.5%;margin-right: 2.5%;padding:30rpx 4.5% 60rpx;"
 				v-for="(item,index) in list" :key="index">
 				<view class="flex-between-center pb30" style="border-bottom: 1px dashed #ccc;">
-					<view class="flex-start-center">{{item.label}} <text class="color-33CC33 fw700 ml10 fz36 ellipsis"
-							style="width: 300rpx;">{{item.title}}</text>
+					<view class="flex-start-center ellipsis" style="width: 400rpx;">{{item.label}} <text class="color-33CC33 fw700 ml10 fz36 ellipsis"
+							style="width: 200rpx;">{{item.title}}</text>
 					</view>
 					<view class="ts-btn color-fff br60 px40" style="height: 80rpx;line-height: 80rpx;"
 						@click="open(item)">去定投

@@ -23,7 +23,7 @@
 							height: 50rpx;"></image>
 						</view>
 						<view class="mb20">
-							BOB {{item.createTime | dateFormat}}
+							UBI {{item.createTime | dateFormat}}
 						</view>
 						<rich-text :nodes="item.content"></rich-text>
 					</scroll-view>
