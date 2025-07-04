@@ -41,29 +41,34 @@
 		<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744982658120dtys.png" mode="widthFix"
 			style="width: 95%;margin: 30rpx 2.5%;height: 500rpx;"></image>
 		<uni-popup ref="popLine">
-			<view class="lh80 fw700"
-				style="width: 90vw; margin: 0 5vw; height: 33vh;border-radius: 20rpx;background-color: #fff;position: relative;">
-				<view class="flex-start-center ml50 pt30">
+			<view class="fw700"
+				style="width: 90vw; margin: 0 5vw; border-radius: 20rpx;background-color: #fff;position: relative;">
+				<view class="flex-start-center ml50 my20 pt30">
+					<view style="width: 200rpx;">标题:</view>
+					<view class="">{{sel.title}}</view>
+				</view>
+				<view class="flex-start-center ml50 my20">
 					<view style="width: 200rpx;">定投额度:</view>
 					<view class="">{{sel.monovalent}}USDT</view>
 				</view>
-				<view class="flex-start-center ml50">
+				<view class="flex-start-center ml50 my20">
 					<view style="width: 200rpx;">年化率:</view>
 					<view class="">{{sel.interestRate}}%</view>
 				</view>
-				<view class="flex-start-center ml50">
+				<view class="flex-start-center ml50 my20">
 					<view style="width: 200rpx;">周期:</view>
 					<view class="">T+{{sel.holdTime}}天</view>
 				</view>
-				<view class="flex-start-center ml50">
+				<view class="flex-start-center ml50 my20">
 					<view style="width: 200rpx;">定投收益:</view>
 					<view class="">{{((sel.monovalent*sel.interestRate)/100).toFixed(2)}}USDT</view>
 				</view>
-				<view class="flex-start-center ml50">
+				<view class="flex-start-center ml50 my20">
 					<view style="width: 200rpx;">交易密码:</view>
 					<input type="number" maxlength="6" v-model="payPassword"
 						style="border-bottom: 1px solid #ccc;width: 200rpx;" />
 				</view>
+				<view class="" style="height: 100rpx;width: 100%;"></view>
 				<view class="lh100 w100 text-align-c flex-around-center"
 					style="position: absolute;bottom: 0;border-top: 1px solid #ccc;">
 					<view class="color-999" style="width: 49%;border-right: 1px solid #ccc;" @click="close">取消</view>
