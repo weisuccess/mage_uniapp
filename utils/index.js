@@ -5,7 +5,7 @@ var url = ""
 var url1 = ""
 // var url1 = baseUrl
 // url1 = 'https://7f208226.r35.cpolar.top'
-url1="http://api.ubi9001.com"
+// url1="http://api.ubi9001.com"
 
 
 
