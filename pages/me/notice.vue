@@ -19,7 +19,7 @@
 					<scroll-view scroll-y="true" :style="{maxHeight:windowHeight-250+'px'}">
 						<view class="">
 							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744106935085logo-000.png"
-								mode="aspectFill" style="width: 100rpx;
+								mode="widthFix" style="width: 120rpx;
 							height: 50rpx;"></image>
 						</view>
 						<view class="mb20">
