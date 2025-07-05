@@ -22,9 +22,9 @@
 			background-size: 100% 100%;margin-left: 2.5%;margin-right: 2.5%;padding:30rpx 4.5% 60rpx;"
 				v-for="(item,index) in list" :key="index">
 				<view class="flex-between-center pb30" style="border-bottom: 1px dashed #ccc;">
-					<view class="flex-start-center ">
-						<text class="ellipsis" style="width: 200rpx;">{{item.label}} </text>
-						<text class="color-33CC33 fw700 ml10 fz36 ellipsis" style="width: 200rpx;">{{item.title}}</text>
+					<view class="flex-start-center w100" style="width: 70%;">
+						<view class="" style="text-align: start;overflow-x: auto;">{{item.label}}</view>
+						<!-- <text class="color-33CC33 fw700 ml10 fz36 ellipsis" style="width: 200rpx;">{{item.title}}</text> -->
 					</view>
 					<view class="ts-btn color-fff br60 px40" style="height: 80rpx;line-height: 80rpx;"
 						@click="open(item)">去定投
@@ -44,10 +44,6 @@
 			<view class="fw700"
 				style="width: 90vw; margin: 0 5vw; border-radius: 20rpx;background-color: #fff;position: relative;">
 				<view class="flex-start-center ml50 my20 pt30">
-					<view style="width: 200rpx;">标题:</view>
-					<view class="">{{sel.title}}</view>
-				</view>
-				<view class="flex-start-center ml50 my20">
 					<view style="width: 200rpx;">定投额度:</view>
 					<view class="">{{sel.monovalent}}USDT</view>
 				</view>
