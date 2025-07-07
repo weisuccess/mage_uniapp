@@ -309,10 +309,16 @@
 							this.show = false
 							this.getList()
 						}
-						uni.showToast({
-							title: rsp.message,
-							icon: 'none'
-						})
+						uni.showModal({
+							title: '提示',
+							content: rsp.message,
+							showCancel:false,
+							success: function (res) {
+								if (res.confirm) {
+									console.log('用户点击确定');
+								} 
+							}
+						});
 					}
 				})
 			},

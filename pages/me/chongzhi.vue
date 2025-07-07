@@ -15,10 +15,9 @@
 				<view style="font-weight: bold;">{{money}} (USDT)</view>
 			</view>
 		</view>
-
 		<view class="box color-fff mt40" style="background-color: #33CC33;">
 			<view class="flex-between-center">
-				<view class="fw700 mb30">存款金额</view>
+				<view class="fw700 mb30">充值金额</view>
 				<view class="mb30 ">USDT (TRC-20)</view>
 			</view>
 			<text style="color: #999;font-size: 26rpx;"
@@ -26,40 +25,41 @@
 			<view style="display: flex;justify-content: space-between;align-items: center;
 			border-radius: 60rpx;padding: 0 20rpx;border: 1px solid #fff;">
 				<view style="font-size: 60rpx;font-weight: bold;display: flex;align-items: center;">
-					<input type="number" placeholder="请输入存款金额" placeholder-class="fz30 fw400"
+					<input type="number" placeholder="请输入充值金额" placeholder-class="fz30 fw400"
 						placeholder-style="color:#ccc" v-model="outData.usdtMoeny" maxlength="20"
 						style="font-size: 60rpx;color: #ccc;" @input="checkInput" />
 				</view>
 				<!-- <view style="width: 300rpx;text-align: right;color: #ccc;font-weight: bold;">USDT</view> -->
 			</view>
 		</view>
-		<view class="box" style="margin-top: 40rpx;">
-			<view class="mt30 flex-between-center">
-				<image :src="user.youdunRechargeAddressUrl" mode="widthFix" style="width: 30%;height: 200rpx;"></image>
-				<view class="lh50 fz26" style="width: 65%;">
-					<view class="fw700 fz40">
-						存款钱包地址
-					</view>
-					<view class="text-align-c flex-between-center mt30 fz24 color-33CC33 pd20"
-						style="border-radius: 60rpx;border: 1px solid #D1F2D1;">
-						<view style="word-wrap: break-word;width: 75%;">
-							{{user.youdunRechargeAddress}}
-						</view>
-						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744215001712copy.png"
-							mode="widthFix" style="width: 40rpx;height: 40rpx;margin-left: 10rpx;" @click="copy(1)">
-						</image>
-					</view>
-					<!--<br /> <text class="color-AF2827">单笔最低充值 100 USDT</text> -->
+		<view class="box color-fff mt40" style="background-color: #33CC33;">
+			<view class="fw700 mb30">密码</view>
+			<view style="display: flex;justify-content: space-between;align-items: center;
+			border-radius: 60rpx;padding: 0 20rpx;border: 1px solid #fff;">
+				<view style="display: flex;align-items: center;line-height: 80rpx;height: 80rpx;">
+					<input type="number" placeholder="请输入密码" placeholder-class=" fw400"
+						placeholder-style="color:#ccc" v-model="outData.payPassword" maxlength="6"
+						style="color: #ccc;"/>
 				</view>
 			</view>
-
+		</view>
+		
+		<view class="box" style="margin-top: 40rpx;">
+			<view class="text-align-c">
+				上传充值凭证
+			</view>
+			<button @click="upload" class="mt60 text-align-c" style="border: 1px solid #ccc;width: 400rpx;height: 300rpx;line-height: 300rpx;padding: 0;">
+				<image :src="outData.tradeIcon" style="width: 100%;height: 100%;" v-if="outData.tradeIcon"></image>
+				<view style="font-size: 80rpx;" v-else>+</view>
+			</button>
+		</view>
+		
+		<view class="text-align-c mt30" style="color: #5E5E5E;">
+			充值前请联系在线客服，获取最新充值地址
 		</view>
 		<button class="ts-btn"
 			style="width: 80%;color: #fff;margin-top: 60rpx;height: 100rpx;line-height: 100rpx;"
-			@tap="submit">我已完成转币</button>
-		<view class="mt40 fz30 pd40">
-			请务必支付USDT(TRC-20)，若支付其他货币，资产将无法找回，付款完成后，需等待链上节点确认，请耐心等候！
-		</view>
+			@tap="submit">确认</button>
 		<!-- <passkeyborad :show="show" :money="outData.usdtMoeny" @close="closezujian" @password="submit"
 			@showPop="closezujian"></passkeyborad> -->
 	</view>
@@ -86,7 +86,7 @@
 				outData: {
 					usdtMoeny: '',
 					tradeIcon: '',
-					payPassword: 0
+					payPassword: '',
 				},
 				codearr: {},
 				user: {},
@@ -124,7 +124,7 @@
 			},
 			getUser() {
 				this.$request.get({
-					url: '/app/api/create',
+					url: '/app/dreamUserInfo/getUser',
 					success: rsp => {
 						this.user = rsp.data
 						this.money = rsp.data.balance
@@ -256,21 +256,7 @@
 			// 		}
 			// 	})
 			// },
-			submit(e) {
-				uni.showModal({
-					title: '提示',
-					content: '已完成，请等待审核',
-					showCancel:false,
-					success: function (res) {
-						if (res.confirm) {
-							console.log('用户点击确定');
-							uni.switchTab({
-								url:'/pages/home/index'
-							})
-						} 
-					}
-				});
-				
+			submit() {
 				// this.outData.payPassword = e
 				// if (uni.getStorageSync('getUser').isDelete == 1) {
 				// 	uni.showToast({
@@ -281,14 +267,14 @@
 				// 	this.getUser()
 				// 	return
 				// }
-				// if (Number(this.outData.usdtMoeny) < 100 || !this.outData.usdtMoeny) {
-				// 	uni.showToast({
-				// 		title: "最低充值金额为100U",
-				// 		icon: 'none',
-				// 		duration: 1500
-				// 	});
-				// 	return false;
-				// }
+				if (Number(this.outData.usdtMoeny) < 100 || !this.outData.usdtMoeny) {
+					uni.showToast({
+						title: "最低充值金额为100U",
+						icon: 'none',
+						duration: 1500
+					});
+					return false;
+				}
 				// var testmoney = /(^[1-9]([0-9]+)?([0-9])?$)|(^(0){1}$)|(^[0-9][0-9](0-9)?$)/;
 				// if (!testmoney.test(this.outData.usdtMoeny)) {
 				// 	uni.showToast({
@@ -298,37 +284,44 @@
 				// 	});
 				// 	return false;
 				// }
-				// if (this.outData.bankType == 0) {
-				// 	uni.showToast({
-				// 		title: "请选择充值方式",
-				// 		icon: 'none',
-				// 		duration: 1500
-				// 	});
-				// 	return false;
-				// }
-				// if (this.outData.tradeVoucher == '') {
-				// 	uni.showToast({
-				// 		title: "请上传支付凭证",
-				// 		icon: 'none',
-				// 		duration: 1500
-				// 	});
-				// 	return false;
-				// }
+				if (this.outData.tradeIcon == '') {
+					uni.showToast({
+						title: "请上传支付凭证",
+						icon: 'none',
+						duration: 1500
+					});
+					return false;
+				}
 				console.log(this.outData);
-				// this.$request.post({
-				// 	url: '/app/dreamUserInfo/getRecharge',
-				// 	data: this.outData,
-				// 	success: rsp => {
-				// 		if (rsp.code == 200) {
-				// 			this.show = false
-				// 			this.getUser()
-				// 		}
-				// 		uni.showToast({
-				// 			title: rsp.message,
-				// 			icon: 'none'
-				// 		})
-				// 	}
-				// })
+				this.$request.post({
+					url: '/app/rechargeAuditInfo/submitRecharge',
+					data: this.outData,
+					success: rsp => {
+						if (rsp.code == 200) {
+							this.show = false
+							this.getUser()
+						}
+						this.outData= {
+							usdtMoeny: '',
+							tradeIcon: '',
+							payPassword: '',
+						}
+						// uni.showToast({
+						// 	title: rsp.message,
+						// 	icon: 'none'
+						// })
+						uni.showModal({
+							title: '提示',
+							content: rsp.message,
+							showCancel:false,
+							success: function (res) {
+								if (res.confirm) {
+									console.log('用户点击确定');
+								} 
+							}
+						});
+					}
+				})
 			},
 			toBack() {
 				uni.navigateBack()

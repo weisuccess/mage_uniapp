@@ -32,12 +32,12 @@
 			<view class="br10" style="background: #33CC33;width: 90%;margin:0 2.5% 30rpx;padding: 2.5%;">
 				<view class="flex-around-center">
 					<view class="flex-start-center" @click="toPage('me/jfmx','')">
-						<image src="/static/home/zjjj.png" mode="widthFix" style="width: 50rpx;height: 50rpx;"></image>
+						<image src="/static/logo1.jpg" mode="widthFix" style="width: 50rpx;height: 50rpx;border-radius: 50%;"></image>
 						<view class="color-fff ml10 mr10">积分 &gt</view>
 						<!-- <view class="color-fff">{{user.integral}} &gt;</view> -->
 					</view>
 					<view class="flex-start-center" @click="toPage('me/kq','')">
-						<image src="/static/home/zjjj.png" mode="widthFix" style="width: 50rpx;height: 50rpx;"></image>
+						<image src="/static/logo1.jpg" mode="widthFix" style="width: 50rpx;height: 50rpx;border-radius: 50%;"></image>
 						<view class="color-fff ml10 mr10">卡券 &gt;</view>
 						<!-- <view class="color-fff">1000 张 &gt;</view> -->
 					</view>
