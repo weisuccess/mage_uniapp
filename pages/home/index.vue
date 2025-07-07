@@ -386,33 +386,6 @@
 			this.getNotice()
 			this.companyAdvantagesInfo()
 			console.log(this.windowHeight);
-			let url = uni.getStorageSync('url')
-			plus.runtime.getProperty(plus.runtime.appid, (widgetInfo) => {
-				console.log(widgetInfo);
-				uni.request({
-					url: url + '/app/versionHistory/query', //仅为示例，并非真实接口地址。
-					success: (res) => {
-						console.log(res);
-						console.log(res.data.data.version, '版本号', widgetInfo.version);
-						if (res.data.data.version != widgetInfo.version) {
-							console.log('版本号不同', res.data.data);
-							uni.request({
-								url: url +
-									'/app/versionHistory/getSysConfig', //仅为示例，并非真实接口地址。
-								success: (res1) => {
-									console.log(res1, 'getSysConfig');
-									let arr = res1.data.data
-									console.log(arr);
-									uni.reLaunch({
-										url: '/pages/webview/webview3?url=' +
-											arr[0].configValue
-									})
-								}
-							});
-						}
-					}
-				});
-			});
 		},
 		methods: {
 			getNotice() {
