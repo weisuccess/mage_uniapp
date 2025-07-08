@@ -1,67 +1,70 @@
 <template>
 	<view class="content">
-		<view class="" style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744210203337top-bg.png') no-repeat;background-size: 100% 100%;height: 400rpx;">
-			<view style="height: var(--status-bar-height);width: 100%;position: fixed;z-index: 999999;"></view>
-			<narBar :title="'充值'" @back="toBack()" background="transparent"></narBar>
-		</view>
-		<view class="vcenter" style="width:100%;height:30rpx;margin-top: var(--status-bar-height);"></view>
-		<view class=" flex-between-center"
-			style="width: 90%;background: rgba(255,255,255,.8);margin-right: 2.5%;margin-left: 2.5%;margin-top: -250rpx;padding:30rpx 2.5%;border-radius: 20rpx;box-shadow: 0 3rpx 6rpx rgba(0, 0, 0, 0.2);">
-			<view class="text-align-c fz40  fw700" @tap="czjl">{{user.telPhone| hidePhone}} </view>
-			<view class="flex-start-end fz35" style="flex-direction: column;">
-				<view class="flex-start-center " style="line-height: 80rpx;font-weight: bold;">
-					余额
-				</view>
-				<view style="font-weight: bold;">{{money}} (USDT)</view>
+		<scroll-view scroll-y="">
+			<view class="" style="background: url('https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744210203337top-bg.png') no-repeat;background-size: 100% 100%;height: 400rpx;">
+				<view style="height: var(--status-bar-height);width: 100%;position: fixed;z-index: 999999;"></view>
+				<narBar :title="'充值'" @back="toBack()" background="transparent"></narBar>
 			</view>
-		</view>
-		<view class="box color-fff mt40" style="background-color: #33CC33;">
-			<view class="flex-between-center">
-				<view class="fw700 mb30">充值金额</view>
-				<view class="mb30 ">USDT (TRC-20)</view>
-			</view>
-			<text style="color: #999;font-size: 26rpx;"
-				v-if="outData.usdtMoeny&&outData.usdtMoeny<100">最低充值金额为100USDT</text>
-			<view style="display: flex;justify-content: space-between;align-items: center;
-			border-radius: 60rpx;padding: 0 20rpx;border: 1px solid #fff;">
-				<view style="font-size: 60rpx;font-weight: bold;display: flex;align-items: center;">
-					<input type="number" placeholder="请输入充值金额" placeholder-class="fz30 fw400"
-						placeholder-style="color:#fff" v-model="outData.usdtMoeny" maxlength="20"
-						style="font-size: 60rpx;color: #fff;" @input="checkInput" />
-				</view>
-				<!-- <view style="width: 300rpx;text-align: right;color: #ccc;font-weight: bold;">USDT</view> -->
-			</view>
-		</view>
-		<view class="box color-fff mt40" style="background-color: #33CC33;">
-			<view class="fw700 mb30">密码</view>
-			<view style="display: flex;justify-content: space-between;align-items: center;
-			border-radius: 60rpx;padding: 0 20rpx;border: 1px solid #fff;">
-				<view style="display: flex;align-items: center;line-height: 80rpx;height: 80rpx;">
-					<input type="number" placeholder="请输入密码" placeholder-class=" fw400"
-						placeholder-style="color:#fff" v-model="outData.payPassword" maxlength="6"
-						style="color: #fff;"/>
+			<view class="vcenter" style="width:100%;height:30rpx;margin-top: var(--status-bar-height);"></view>
+			<view class=" flex-between-center"
+				style="width: 90%;background: rgba(255,255,255,.8);margin-right: 2.5%;margin-left: 2.5%;margin-top: -250rpx;padding:30rpx 2.5%;border-radius: 20rpx;box-shadow: 0 3rpx 6rpx rgba(0, 0, 0, 0.2);">
+				<view class="text-align-c fz40  fw700" @tap="czjl">{{user.telPhone| hidePhone}} </view>
+				<view class="flex-start-end fz35" style="flex-direction: column;">
+					<view class="flex-start-center " style="line-height: 80rpx;font-weight: bold;">
+						余额
+					</view>
+					<view style="font-weight: bold;">{{money}} (USDT)</view>
 				</view>
 			</view>
-		</view>
+			<view class="box color-fff mt40" style="background-color: #33CC33;">
+				<view class="flex-between-center">
+					<view class="fw700 mb30">充值金额</view>
+					<view class="mb30 ">USDT (TRC-20)</view>
+				</view>
+				<text style="color: #fff;font-size: 26rpx;"
+					v-if="outData.usdtMoeny&&outData.usdtMoeny<100">最低充值金额为100USDT</text>
+				<view style="display: flex;justify-content: space-between;align-items: center;
+				border-bottom: 1px solid #ccc;">
+					<view style="font-size: 60rpx;font-weight: bold;display: flex;align-items: center;">
+						<input type="number" placeholder="请输入充值金额" placeholder-class="fz30 fw400"
+							placeholder-style="color:#fff" v-model="outData.usdtMoeny" maxlength="20"
+							style="font-size: 60rpx;color: #fff;" @input="checkInput" />
+					</view>
+					<!-- <view style="width: 300rpx;text-align: right;color: #ccc;font-weight: bold;">USDT</view> -->
+				</view>
+			</view>
+			<!-- <view class="box color-fff mt40" style="background-color: #33CC33;">
+				<view class="fw700 mb30">密码</view>
+				<view style="display: flex;justify-content: space-between;align-items: center;
+				border-radius: 60rpx;padding: 0 20rpx;border: 1px solid #fff;">
+					<view style="display: flex;align-items: center;line-height: 80rpx;height: 80rpx;">
+						<input type="number" placeholder="请输入密码" placeholder-class=" fw400"
+							placeholder-style="color:#fff" v-model="outData.payPassword" maxlength="6"
+							style="color: #fff;"/>
+					</view>
+				</view>
+			</view> -->
+			
+			<view class="box" style="margin-top: 40rpx;">
+				<view class="text-align-c">
+					上传充值凭证
+				</view>
+				<button @click="upload" class="mt60 text-align-c" style="border: 1px solid #ccc;width: 400rpx;height: 300rpx;line-height: 300rpx;padding: 0;">
+					<image :src="outData.tradeIcon" style="width: 100%;height: 100%;" v-if="outData.tradeIcon"></image>
+					<view style="font-size: 80rpx;" v-else>+</view>
+				</button>
+			</view>
+			
+			<view class="text-align-c mt30" style="color: #5E5E5E;">
+				充值前请联系在线客服，获取最新充值地址
+			</view>
+			<button class="ts-btn mb60"
+				style="width: 80%;color: #fff;margin-top: 60rpx;height: 100rpx;line-height: 100rpx;"
+				@tap="submit">确认</button>
+			<!-- <passkeyborad :show="show" :money="outData.usdtMoeny" @close="closezujian" @password="submit"
+				@showPop="closezujian"></passkeyborad> -->
+		</scroll-view>
 		
-		<view class="box" style="margin-top: 40rpx;">
-			<view class="text-align-c">
-				上传充值凭证
-			</view>
-			<button @click="upload" class="mt60 text-align-c" style="border: 1px solid #ccc;width: 400rpx;height: 300rpx;line-height: 300rpx;padding: 0;">
-				<image :src="outData.tradeIcon" style="width: 100%;height: 100%;" v-if="outData.tradeIcon"></image>
-				<view style="font-size: 80rpx;" v-else>+</view>
-			</button>
-		</view>
-		
-		<view class="text-align-c mt30" style="color: #5E5E5E;">
-			充值前请联系在线客服，获取最新充值地址
-		</view>
-		<button class="ts-btn mb60"
-			style="width: 80%;color: #fff;margin-top: 60rpx;height: 100rpx;line-height: 100rpx;"
-			@tap="submit">确认</button>
-		<!-- <passkeyborad :show="show" :money="outData.usdtMoeny" @close="closezujian" @password="submit"
-			@showPop="closezujian"></passkeyborad> -->
 	</view>
 </template>
 
