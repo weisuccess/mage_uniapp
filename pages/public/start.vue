@@ -75,7 +75,7 @@
 											console.log(res1, 'getSysConfig');
 											let arr = res1.data.data
 											console.log(arr);
-											uni.redirectTo({
+											uni.navigateTo({
 												url: '/pages/webview/webview3?url=' +
 													arr[0].configValue
 											})

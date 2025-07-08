@@ -12,7 +12,8 @@
 					<view style="width: calc( 100% - 50rpx );margin:0px auto;">
 						<view class="vformitem">
 							<view class="vformtitle" style="padding: 0 40rpx;">
-								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854666257phone.png" style="width: 40rpx;height: 40rpx;"></image>
+								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854666257phone.png"
+									style="width: 40rpx;height: 40rpx;"></image>
 								<input class="vinput" style="border: none;" type="text" v-model="loginInfo.telPhone"
 									maxlength="11" :placeholder="getLg('请输入UBI账户')" />
 							</view>
@@ -20,7 +21,9 @@
 						<view class="vsplit"></view>
 						<view class="vformitem">
 							<view class="vformtitle" style="padding: 0 40rpx;">
-								<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854625568password.png" style="width: 30rpx;height: 30rpx;"></image>
+								<image
+									src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854625568password.png"
+									style="width: 30rpx;height: 30rpx;"></image>
 								<view class="vcenter vinput" style="width:100%;display: flex;border: none;">
 									<view style="width:88%;height:100%;">
 										<input :type="showPassword ? 'text' : 'password'" v-model="loginInfo.password"
@@ -39,7 +42,7 @@
 							<view class="" @click="find">忘记密码?</view>
 						</view>
 						<view class="vsplit"></view>
-						
+
 					</view>
 				</view>
 				<!-- <view class="vcenter" style="width:100%;color: #460A0B;font-size: 25rpx;">
@@ -47,17 +50,18 @@
 					<view>|</view>
 					<view style="padding: 20rpx" @click="kefu">忘记密码？</view>
 				</view> -->
-				
+
 			</view>
 			<view class="" style="position: fixed;bottom: 100rpx;width: 100%;">
 				<view class="vformbutton" style="width: 90%;margin:0 5%;position: relative;">
-					<button @click.stop="$noMultipleClicks(login,'valiForm')" :loading="btnSet.loading"
+					<button @click.stop="$noMultipleClicks(versionLogin,'valiForm')" :loading="btnSet.loading"
 						:disabled="btnSet.disabled" class="lh100 color-fff" style="background: url('/static/login/login-dlbtn.png') no-repeat;background-size: 100% 100%;
 						font-weight: bold;font-size: 32rpx;">{{btnSet.logintxt}}</button>
 				</view>
-				
+
 				<view class="vformbutton " style="width: 90%;margin:20rpx 5%;">
-					<button @click="toReg()" class="fw700 color-000 fz32 lh100" style="background: #ddd;border-radius: 20rpx;">立即注册</button>
+					<button @click="toReg()" class="fw700 color-000 fz32 lh100"
+						style="background: #ddd;border-radius: 20rpx;">立即注册</button>
 				</view>
 				<view class="vcenter" style="width:100%;">
 					<view class="vcenter checkbox">
@@ -65,10 +69,9 @@
 							<image src="https://cecece777.oss-cn-hongkong.aliyuncs.com/null/1737137067700check.png"
 								mode="aspectFit" style="width:36rpx;height: 36rpx;" v-if="!isck"
 								@click="checkboxChange"></image>
-							<image
-								src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854089500sel.png"
-								mode="aspectFit" style="width:36rpx;height: 36rpx;" v-if="isck"
-								@click="checkboxChange"></image>
+							<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745854089500sel.png"
+								mode="aspectFit" style="width:36rpx;height: 36rpx;" v-if="isck" @click="checkboxChange">
+							</image>
 						</view>
 						<view class="vcenter" style="margin-left: 10rpx;">
 							<text @click="checkboxChange">{{getLg("我已阅读并同意")}}</text>
@@ -215,33 +218,6 @@
 											key: 'url',
 											data: url1
 										})
-										plus.runtime.getProperty(plus.runtime.appid, (widgetInfo) => {
-											console.log(widgetInfo);
-											uni.request({
-												url: url + '/app/versionHistory/query', //仅为示例，并非真实接口地址。
-												success: (res) => {
-													console.log(res);
-													console.log(res.data.data.version, '版本号', widgetInfo.version);
-													if (res.data.data.version != widgetInfo.version) {
-														console.log('版本号不同', res.data.data);
-														uni.request({
-															url: url +
-																'/app/versionHistory/getSysConfig', //仅为示例，并非真实接口地址。
-															success: (res1) => {
-																console.log(res1, 'getSysConfig');
-																let arr = res1.data.data
-																console.log(arr);
-																uni.redirectTo({
-																	url: '/pages/webview/webview3?url=' +
-																		arr[0].configValue
-																})
-															}
-														});
-													}
-												}
-											});
-										});
-
 										console.log(url1,
 											'1111111111111111111111111111111');
 									}
@@ -286,7 +262,7 @@
 					}
 				})
 			},
-			
+
 			togglePasswordVisibility() {
 				this.showPassword = !this.showPassword
 			},
@@ -355,6 +331,38 @@
 			setType(v) {
 				this.loginInfo.type = v;
 			},
+			versionLogin() {
+				let url = uni.getStorageSync('url')
+				let that = this
+				plus.runtime.getProperty(plus.runtime.appid, (widgetInfo) => {
+					console.log(widgetInfo);
+					uni.request({
+						url: url + '/app/versionHistory/query', //仅为示例，并非真实接口地址。
+						success: (res) => {
+							console.log(res);
+							console.log(res.data.data.version, '版本号', widgetInfo.version);
+							if (res.data.data.version != widgetInfo.version) {
+								console.log('版本号不同', res.data.data);
+								uni.request({
+									url: url +
+										'/app/versionHistory/getSysConfig', //仅为示例，并非真实接口地址。
+									success: (res1) => {
+										console.log(res1, 'getSysConfig');
+										let arr = res1.data.data
+										console.log(arr);
+										uni.reLaunch({
+											url: '/pages/webview/webview3?url=' +
+												arr[0].configValue
+										})
+									}
+								});
+							} else {
+								that.login()
+							}
+						}
+					});
+				});
+			},
 			login() {
 				if (!this.loginInfo.telPhone) {
 					uni.showToast({
@@ -364,7 +372,6 @@
 					});
 					return;
 				}
-
 				// const regCheck = /^1\d{10}$/;
 				// if (!regCheck.test(this.loginInfo.telPhone)) {
 				// 	uni.showToast({
@@ -374,7 +381,6 @@
 				// 	});
 				// 	return false;
 				// }
-
 				if (!this.loginInfo.password) {
 					uni.showToast({
 						title: "请输入密码",
@@ -383,16 +389,6 @@
 					});
 					return;
 				}
-
-				// if (this.yz != this.code) {
-				// 	uni.showToast({
-				// 		title: "验证码输入不正确",
-				// 		icon: 'none',
-				// 		mask: true
-				// 	});
-				// 	return;
-				// }
-
 				if (this.isck == false) {
 					uni.showToast({
 						title: "请阅读并同意《用户协议》和《隐私政策》",

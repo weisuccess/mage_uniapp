@@ -26,8 +26,8 @@
 			border-radius: 60rpx;padding: 0 20rpx;border: 1px solid #fff;">
 				<view style="font-size: 60rpx;font-weight: bold;display: flex;align-items: center;">
 					<input type="number" placeholder="请输入充值金额" placeholder-class="fz30 fw400"
-						placeholder-style="color:#ccc" v-model="outData.usdtMoeny" maxlength="20"
-						style="font-size: 60rpx;color: #ccc;" @input="checkInput" />
+						placeholder-style="color:#fff" v-model="outData.usdtMoeny" maxlength="20"
+						style="font-size: 60rpx;color: #fff;" @input="checkInput" />
 				</view>
 				<!-- <view style="width: 300rpx;text-align: right;color: #ccc;font-weight: bold;">USDT</view> -->
 			</view>
@@ -38,8 +38,8 @@
 			border-radius: 60rpx;padding: 0 20rpx;border: 1px solid #fff;">
 				<view style="display: flex;align-items: center;line-height: 80rpx;height: 80rpx;">
 					<input type="number" placeholder="请输入密码" placeholder-class=" fw400"
-						placeholder-style="color:#ccc" v-model="outData.payPassword" maxlength="6"
-						style="color: #ccc;"/>
+						placeholder-style="color:#fff" v-model="outData.payPassword" maxlength="6"
+						style="color: #fff;"/>
 				</view>
 			</view>
 		</view>
@@ -57,7 +57,7 @@
 		<view class="text-align-c mt30" style="color: #5E5E5E;">
 			充值前请联系在线客服，获取最新充值地址
 		</view>
-		<button class="ts-btn"
+		<button class="ts-btn mb60"
 			style="width: 80%;color: #fff;margin-top: 60rpx;height: 100rpx;line-height: 100rpx;"
 			@tap="submit">确认</button>
 		<!-- <passkeyborad :show="show" :money="outData.usdtMoeny" @close="closezujian" @password="submit"
