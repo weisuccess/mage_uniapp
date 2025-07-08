@@ -33,18 +33,6 @@
 					<!-- <view style="width: 300rpx;text-align: right;color: #ccc;font-weight: bold;">USDT</view> -->
 				</view>
 			</view>
-			<!-- <view class="box color-fff mt40" style="background-color: #33CC33;">
-				<view class="fw700 mb30">密码</view>
-				<view style="display: flex;justify-content: space-between;align-items: center;
-				border-radius: 60rpx;padding: 0 20rpx;border: 1px solid #fff;">
-					<view style="display: flex;align-items: center;line-height: 80rpx;height: 80rpx;">
-						<input type="number" placeholder="请输入密码" placeholder-class=" fw400"
-							placeholder-style="color:#fff" v-model="outData.payPassword" maxlength="6"
-							style="color: #fff;"/>
-					</view>
-				</view>
-			</view> -->
-			
 			<view class="box" style="margin-top: 40rpx;">
 				<view class="text-align-c">
 					上传充值凭证
@@ -89,7 +77,6 @@
 				outData: {
 					usdtMoeny: '',
 					tradeIcon: '',
-					payPassword: '',
 				},
 				codearr: {},
 				user: {},
@@ -307,7 +294,6 @@
 						this.outData= {
 							usdtMoeny: '',
 							tradeIcon: '',
-							payPassword: '',
 						}
 						// uni.showToast({
 						// 	title: rsp.message,
