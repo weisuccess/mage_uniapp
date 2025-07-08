@@ -289,7 +289,7 @@
 				// }
 				if (this.outData.tradeIcon == '') {
 					uni.showToast({
-						title: "请上传支付凭证",
+						title: "请上传充值凭证",
 						icon: 'none',
 						duration: 1500
 					});
