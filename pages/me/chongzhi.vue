@@ -37,7 +37,7 @@
 				<view class="text-align-c">
 					上传充值凭证
 				</view>
-				<button @click="upload" class="mt60 text-align-c" style="border: 1px solid #ccc;width: 400rpx;height: 300rpx;line-height: 300rpx;padding: 0;">
+				<button @click="upload" class="mt60 text-align-c" style="border: 1px solid #ccc;width: 350rpx;height: 200rpx;line-height: 200rpx;padding: 0;">
 					<image :src="outData.tradeIcon" style="width: 100%;height: 100%;" v-if="outData.tradeIcon"></image>
 					<view style="font-size: 80rpx;" v-else>+</view>
 				</button>
