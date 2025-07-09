@@ -190,6 +190,17 @@
 				// 	})
 				// 	return
 				// }
+				if (this.cardFront ==
+					'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17445281921891737112587392sf1.png' ||
+					this.cardSide == 'https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/17445282956061737112611352sf2.png'
+					) {
+					uni.showToast({
+						title: '请检查身份证照片',
+						icon: 'none'
+					})
+					return
+				}
+
 				this.$request.post({
 					url: "/app/userRealName/getIdCard",
 					data: {
