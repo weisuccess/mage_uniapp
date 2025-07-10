@@ -26,13 +26,21 @@
 						</view>
 					</view>
 					<view class="flex-center-center color-33CC33 pb30 mt60">
-						iPhone通用下载：<view style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 300rpx; ">{{list.anzhuoDownload}}</view>
+						<view class="">
+							ios下载：
+						</view>
+						<view style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 50%; ">
+							{{list.anzhuoDownload}}</view>
 						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744285610410copy.png"
 							mode="widthFix" class="ml10" style="width: 30rpx;height: 30rpx;"
 							@click="copy(list.anzhuoDownload)"></image>
 					</view>
 					<view class="flex-center-center color-33CC33">
-						Android通用下载： <view style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 300rpx; ">{{list.iosDownload}}</view>
+						<view class="">
+							安卓下载：
+						</view>
+						<view style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 50%; ">
+							{{list.iosDownload}}</view>
 						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744285610410copy.png"
 							mode="widthFix" class="ml10" style="width: 30rpx;height: 30rpx;"
 							@click="copy(list.iosDownload)"></image>
