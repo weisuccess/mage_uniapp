@@ -27,7 +27,7 @@
 					</view>
 					<view class="flex-between-center color-33CC33 pb30 mt60">
 						<view class="">
-							ios下载：
+							IOS下载：
 						</view>
 						<view style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 60%; ">
 							{{list.anzhuoDownload}}</view>
