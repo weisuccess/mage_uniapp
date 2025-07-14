@@ -10,8 +10,8 @@
 				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745416416923图层 2.png" mode="widthFix"
 					style="width: 100%;" @click="shakeImage" :style="imageStyle"></image>
 				<view class="w100 text-align-c" style="margin-top: -15vh;position: absolute;z-index: 9;">
-					<view class="" style="color: #423975;">已有 {{people}} 人参与</view>
-					<view class="mt50" style="color: #423975;">您今天还有 {{user.lotteryFrequency}} 次砸蛋机会</view>
+					<!-- <view class="" style="color: #423975;">已有 {{people}} 人参与</view> -->
+					<view class="mt100" style="color: #423975;">您今天还有 {{user.lotteryFrequency}} 次砸蛋机会</view>
 				</view>
 
 				<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1745401112146zi.png" mode="widthFix"
