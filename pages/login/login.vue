@@ -54,9 +54,8 @@
 			</view>
 			<view class="" style="position: fixed;bottom: 100rpx;width: 100%;">
 				<view class="vformbutton" style="width: 90%;margin:0 5%;position: relative;">
-					<button @click.stop="$noMultipleClicks(versionLogin,'valiForm')" :loading="btnSet.loading"
-						:disabled="btnSet.disabled" class="lh100 color-fff" style="background: url('/static/login/login-dlbtn.png') no-repeat;background-size: 100% 100%;
-						font-weight: bold;font-size: 32rpx;">{{btnSet.logintxt}}</button>
+					<button @tap="versionLogin()" class="lh100 color-fff" style="background: url('/static/login/login-dlbtn.png') no-repeat;background-size: 100% 100%;
+						font-weight: bold;font-size: 32rpx;">立即登录</button>
 				</view>
 
 				<view class="vformbutton " style="width: 90%;margin:20rpx 5%;">
@@ -163,6 +162,28 @@
 				}
 				let url1 = ''
 				let indexUrl = uni.getStorageSync('index')
+				// let askIndex = uni.getStorageSync('askIndex')
+				// console.log(askIndex);
+				// if (askIndex >= 1) {
+				// 	setTimeout(() => {
+				// 		uni.setStorage({
+				// 			key: 'askIndex',
+				// 			data: 0
+				// 		})
+				// 		uni.setStorage({
+				// 			key: 'askIndex',
+				// 			data: 0
+				// 		})
+				// 		uni.removeStorageSync('askIndex')
+				// 		plus.runtime.restart();
+				// 	}, 1000)
+				// 	return
+				// }
+				// askIndex += 1
+				// uni.setStorage({
+				// 	key: 'askIndex',
+				// 	data: askIndex
+				// })
 				indexUrl += 1
 				uni.setStorage({
 					key: 'index',
@@ -196,18 +217,12 @@
 											})
 											index = 0
 										}
-										console.log("arr!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-											arr)
 										let urls = ''
 										for (var i = index; i < arr.length; i++) {
 											console.log(arr[i]);
 											urls = arr[i]
 										}
-										console.log("urls!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-											urls)
 										url1 = urls.trim()
-										console.log("url1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!",
-											url1)
 										uni.hideLoading()
 										// 初始化请求配置
 										request.setConfig({
@@ -218,14 +233,26 @@
 											key: 'url',
 											data: url1
 										})
-										console.log(url1,
-											'1111111111111111111111111111111');
+										uni.showToast({
+											title: '加载成功',
+											icon: 'none'
+										})
+										console.log(url1,'1111111111111111111111111111111');
 									}
 								});
 							}, function(e) {
 								console.log("Resolve file URL failed: " + e.message);
 							});
 						}
+					},
+					complete: (e) => {
+						if (e.statusCode != 200) {
+							uni.showToast({
+								title: '加载失败',
+								icon: 'none'
+							})
+						}
+						console.log(e);
 					}
 				})
 			},
@@ -333,6 +360,7 @@
 			},
 			versionLogin() {
 				let url = uni.getStorageSync('url')
+				console.log(url);
 				let that = this
 				plus.runtime.getProperty(plus.runtime.appid, (widgetInfo) => {
 					console.log(widgetInfo);
@@ -359,11 +387,34 @@
 							} else {
 								that.login()
 							}
+						},
+						fail:(e)=>{
+							console.log(e);
+							
+							uni.showModal({
+								title: '提示',
+								content: '网络异常',
+								confirmText: '重新加载',
+								success: function(res) {
+									if (res.confirm) {
+										console.log('用户点击确定');
+										uni.setStorage({
+											key: 'index',
+											data: 0
+										})
+										uni.removeStorageSync('url')
+										plus.runtime.restart();
+									} else if (res.cancel) {
+										console.log('用户点击取消');
+									}
+								}
+							});
 						}
 					});
 				});
 			},
 			login() {
+				console.log('denglu');
 				if (!this.loginInfo.telPhone) {
 					uni.showToast({
 						title: "请输入手机号码",
@@ -397,12 +448,11 @@
 					});
 					return;
 				}
-				this.btnSet = {
-					loading: true,
-					disabled: true,
-					logintxt: "登录中..."
-				};
-
+				// this.btnSet = {
+				// 	loading: true,
+				// 	disabled: true,
+				// 	logintxt: "登录中..."
+				// };
 				this.$request.get({
 					url: "/app/dreamUserInfo/login",
 					data: this.loginInfo,

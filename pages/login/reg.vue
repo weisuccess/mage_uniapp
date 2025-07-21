@@ -67,8 +67,8 @@
 							</view>
 						</view>
 						<view class="vformbutton lh100" style="width:95%;margin:50rpx 2.5%;">
-							<button @click="reg()" :loading="btnSet.loading" :disabled="btnSet.disabled" style="background: url('/static/login/login-dlbtn.png') no-repeat;background-size: 100% 100%;
-								font-weight: bold;font-size: 32rpx;color: #fff;">{{btnSet.btntxt}}</button>
+							<button @click="reg()" style="background: url('/static/login/login-dlbtn.png') no-repeat;background-size: 100% 100%;
+								font-weight: bold;font-size: 32rpx;color: #fff;">立即注册</button>
 						</view>
 						<view class="line">已有账号？<text class="border-bottom" @click="loginBack()">去登录</text></view>
 					</view>
@@ -244,11 +244,11 @@
 					});
 					return false;
 				}
-				this.btnSet = {
-					loading: true,
-					disabled: true,
-					btntxt: "处理中..."
-				};
+				// this.btnSet = {
+				// 	loading: true,
+				// 	disabled: true,
+				// 	btntxt: "处理中..."
+				// };
 				this.$request.post({
 					url: "/app/dreamUserInfo/enroll",
 					data: this.regInfo,
