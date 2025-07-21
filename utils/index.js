@@ -1,13 +1,14 @@
 import request from './request1';
+import debounce from './debounce';
 
 
 var url = ""
 var url1 = ""
 // var url1 = baseUrl
-// url1 = 'https://6974522shqt4.vicp.fun'
-// url1="http://api.ubi9001.com"
-
-
+// url1 = 'http://api.ubi90011.com'
+// url1 = ''
+url1 = uni.getStorageSync('url') || ''
+console.log(url1);
 
 
 function getRandomElement(arr) {
@@ -18,8 +19,16 @@ function getRandomElement(arr) {
 if (url1 == "" || !url1) {
 	uni.showLoading({
 		title: "选择最优线路中",
-		mask: true
+		mask: true,
 	})
+	// uni.setStorage({
+	// 	key: 'askIndex',
+	// 	data: 0
+	// })
+	// console.log('askIndex', uni.getStorageSync('askIndex'))
+	setTimeout(() => {
+		uni.hideLoading()
+	}, 5000)
 	if (!uni.getStorageSync('index')) {
 		uni.setStorage({
 			key: 'index',
@@ -78,6 +87,35 @@ if (url1 == "" || !url1) {
 					console.log("Resolve file URL failed: " + e.message);
 				});
 			}
+		},
+		complete: (e) => {
+			uni.hideLoading()
+			console.log(e);
+			if (e.statusCode && e.statusCode != 200) {
+				uni.showModal({
+					title: '提示',
+					content: '网络异常',
+					confirmText: '重新加载',
+					success: function(res) {
+						if (res.confirm) {
+							console.log('用户点击确定');
+							uni.setStorage({
+								key: 'index',
+								data: 0
+							})
+							uni.removeStorageSync('url')
+							plus.runtime.restart();
+						} else if (res.cancel) {
+							console.log('用户点击取消');
+						}
+					}
+				});
+				// uni.showToast({
+				// 	title: '网络异常',
+				// 	icon: 'error'
+				// })
+			}
+			console.log(e);
 		}
 	})
 
@@ -92,10 +130,10 @@ if (url1 == "" || !url1) {
 	})
 }
 
-
 // 设置全局配置
 let ajaxTimes = 0;
 request.addInterceptors.request(config => {
+	console.log(config);
 	ajaxTimes++;
 	uni.showLoading({
 		// title: '加载中···',
@@ -155,46 +193,17 @@ request.addInterceptors.response(res => {
 			uni.removeStorageSync('token')
 			uni.hideLoading()
 		}
-		if (res.data.code == 406) {
-			let versionTime = uni.getStorageSync("versionTime");
-			if (versionTime == null || versionTime == undefined || new Date().getTime() - versionTime > 3000) {
-
-				uni.setStorageSync("versionTime", new Date().getTime())
-				console.log(res.data);
-				uni.showToast({
-					title: res.data.message,
-					icon: 'none',
-					success: function(rsp) {
-						console.log(rsp);
-						var url = "";
-						if (uni.getSystemInfoSync().osName != "ios") {
-							console.log(res.data.data.android);
-							url = res.data.data.android;
-						} else {
-							console.log(res.data.data.android);
-							url = res.data.data.ios;
-						}
-						console.log(url);
-						setTimeout(function() {
-							uni.navigateTo({
-								url: '/pages/webview/webview3?url=' + url
-							})
-						}, 1500);
-					},
-					fail: function(res) {},
-				})
-			}
-			uni.hideLoading()
-		}
-		// console.log('request中打印后端返回数据', data);
 		return data;
 	} else {
 		uni.hideLoading()
 		uni.showToast({
 			title: ' 加载错误，请重新进入页面尝试',
 			icon: 'none',
-			mask: true
+			duration: 1000
 		})
+		setTimeout(() => {
+			uni.hideToast()
+		}, 1000)
 	}
 
 	// 3xx
@@ -204,10 +213,10 @@ request.addInterceptors.response(res => {
 	}
 
 	//4xx or 5xx
-	if (firstCodeNum === '4' || firstCodeNum === '5') {
-		// do something
-		return Promise.reject(res)
-	}
+	// if (firstCodeNum === '4' || firstCodeNum === '5') {
+	// 	// do something
+	// 	return Promise.reject(res)
+	// }
 
 	// 停止发送请求 request.stop()
 	if (JSON.stringify(res) === '{"errMsg":"request:fail abort"}') {
@@ -217,12 +226,74 @@ request.addInterceptors.response(res => {
 	console.log(res);
 	numErr += 1
 	let indexUrl = uni.getStorageSync('index')
+	let askIndex = uni.getStorageSync('askIndex') || 0
+	console.log(askIndex);
+	// const now = Date.now()
+	// let lastShowTime=uni.getStorageSync('lastShowTime') || 0
+	if (askIndex == 1 || askIndex >= 6) {
+		uni.setStorage({
+			key: 'index',
+			data: 0
+		})
+		if (askIndex >= 6) {
+			askIndex = 0
+			uni.setStorage({
+				key: 'askIndex',
+				data: 0
+			})
+		}
+		if (askIndex == 1) {
+			askIndex += 1
+			uni.setStorage({
+				key: 'askIndex',
+				data: askIndex
+			})
+		}
+		console.log(askIndex);
+
+		uni.showModal({
+			title: '提示',
+			content: '网络异常',
+			confirmText: '重新加载',
+			success: function(res) {
+				if (res.confirm) {
+					console.log('用户点击确定');
+					uni.setStorage({
+						key: 'index',
+						data: 0
+					})
+					uni.removeStorageSync('url')
+					if (askIndex >= 6) {
+						uni.removeStorageSync('askIndex')
+					}
+					plus.runtime.restart();
+				} else if (res.cancel) {
+					console.log('用户点击取消');
+					// uni.setStorage({
+					// 	key: 'askIndex',
+					// 	data: 0
+					// })
+				}
+			}
+		});
+		return
+	}
+	askIndex += 1
+	console.log(askIndex);
+	uni.setStorage({
+		key: 'askIndex',
+		data: askIndex
+	})
+
+
+
+
 	indexUrl += 1
 	uni.setStorage({
 		key: 'index',
 		data: indexUrl
 	})
-	console.log('numErrnumErrnumErrnumErr', numErr);
+	// console.log('numErrnumErrnumErrnumErr', numErr);
 	console.log('indexUrl', indexUrl);
 	// if (numErr == 1) {
 	// 	numErr = 0
@@ -241,7 +312,7 @@ request.addInterceptors.response(res => {
 							fileReader.readAsText(file, 'utf-8');
 							fileReader.onloadend = function(evt) {
 								let data = evt.target.result.split(",");
-								console.log(data);
+								// console.log(data);
 								// let urls = getRandomElement(atob(data[1]).split("|"))
 								let newUrl = atob(data[1])
 								let arr = newUrl.split("|")
@@ -253,16 +324,17 @@ request.addInterceptors.response(res => {
 									})
 									index = 0
 								}
-								console.log("arr",arr)
-								console.log(index);
+								// console.log("arr", arr)
+								// console.log(index);
 								let urls = ''
-								for (var i = index; i < arr.length; i++) {
-									console.log(arr[i]);
+								for (var i = index; i < arr
+									.length; i++) {
+									// console.log(arr[i]);
 									urls = arr[i]
 								}
-								console.log("urls",urls)
+								// console.log("urls", urls)
 								url1 = urls.trim()
-								console.log("url1",url1)
+								// console.log("url1", url1)
 								uni.hideLoading()
 								// 初始化请求配置
 								request.setConfig({

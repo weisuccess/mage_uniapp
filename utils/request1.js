@@ -90,7 +90,30 @@ var _ = {
             afterUrlHasSlash = url.indexOf('/') === 0;
 
         if (url.length === 0 || !_.isCompleteUrl(configUrl)) {
+			// uni.showToast({
+			// 	title:'错误',
+			// 	icon:'error'
+			// })
+			uni.showModal({
+				title: '提示',
+				content: '线路出错啦',
+				confirmText: '重新加载',
+				success: function(res) {
+					if (res.confirm) {
+						console.log('用户点击确定');
+						uni.setStorage({
+							key: 'index',
+							data: 0
+						})
+						uni.removeStorageSync('url')
+						plus.runtime.restart();
+					} else if (res.cancel) {
+						console.log('用户点击取消');
+					}
+				}
+			});
             _.error('url参数不完整或者错误');
+			
         }
 
         if (_.isCompleteUrl(url)) {
