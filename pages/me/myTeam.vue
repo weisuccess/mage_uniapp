@@ -54,6 +54,7 @@
 		<scroll-view scroll-y="true" :style="{'height':windowHeight+'px'}" style="margin-top: -50rpx;">
 			<view class="br10" style="background-color: #fff;width: 95%;margin: 0 2.5%;margin: 0 2.5%;">
 				<view class="box" @click="active(0)">
+				 
 					<view class="flex-around-center fz26 text-align-c pt30" style="border-bottom: 1rpx solid #ccc;">
 						<view class="pt30 " style="border-right: 1rpx solid #ccc;width: 33.3%;">
 							<view class="vmt10" style="font-size: 30rpx;color: #626262;line-height: 60rpx;">团队总充值</view>
@@ -71,27 +72,31 @@
 						</view>
 					</view>
 				</view>
+				
 				<view class="box"
 					style="margin-top: 20rpx;border-radius: 20rpx;box-shadow: 0 3rpx 6rpx rgba(0, 0, 0, 0.2);background-color: #fff;">
 					<view style="margin: 20rpx 0;background: #EAFAEA;">
 						<scroll-view scroll-x="true" show-scrollbar="false" class="100">
+						 aaa
 							<view class="flex-around-center">
 								<view style="padding: 30rpx 20rpx;" @click="active(index)" v-for="(item,index) in sel"
 									:key="index">
+								 bbb
 									<view style="font-size: 30rpx;color: #626262;line-height: 60rpx;"
 										:style="[{'height':isActive==index?'55rpx':'60rpx'}]"
 										:class="isActive==index?'active':''">
-										{{item}}
+										{{item}} 
 									</view>
 								</view>
 							</view>
 						</scroll-view>
 					</view>
+			 
 					<view class="pb40" style="font-size: 30rpx;line-height: 60rpx;">
 						<view class="flex-around-center text-align-c" style="color: #949494;">
 							<view style="">
 								<view class="fz20">总人数</view>
-								<view class="fz34 fw700" style="color: #454343;">{{list.levelVoList[isActive].number}}
+								<view class="fz34 fw700" style="color: #454343;">{{list.levelVoList[isActive].number}}bbb
 								</view>
 							</view>
 							<view style="">

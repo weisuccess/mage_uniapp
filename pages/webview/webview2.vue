@@ -1,21 +1,26 @@
 <template>
 	<view class="container">
-		<cover-view class="bai" @click="back">
+		
+		<web-view :src="urls" class="webview "></web-view>
+ 
+		<cover-view class="bai" @click="back()"   >
 			返回
 		</cover-view>
-		<web-view :src="urls"></web-view>
 	</view>
 </template>
 <script>
 	export default {
 		data() {
 			return {
-				urls: '',
+				urls: 'http://www.baidu.com',
 				width: 0,
 			};
 		},
 		onLoad(opt) {
-			this.urls = opt.url
+			
+			console.log(decodeURIComponent (opt.url));
+			 
+			this.urls = decodeURIComponent (opt.url)
 			let that=this
 			uni.getSystemInfo({
 				success: function (res) {
@@ -31,22 +36,43 @@
 		},
 		methods: {
 			back() {
-				console.log('fanhui');
+				console.log('fanhddui');
 				uni.navigateBack()
 			}
 		}
 	};
 </script>
 <style>
+	.container {
+	  display: flex;
+	  flex-direction: column;
+	  width: 100%;
+	  height: 100%;
+	  margin-top: 50rpx;
+	}
+	.webview {
+	  flex-grow: 1; /* 让web-view填充剩余空间 */
+	 
+	}
+	.button-container {
+	  display: flex;
+	  justify-content: flex-end; /* 右对齐 */
+	  padding: 10px; /* 根据需要调整 */
+	}
 	.bai {
-		z-index: 999999;
-		height: 100rpx;
+		z-index: 90;
+		/* height: 100rpx; */
 		position: fixed;
-		top: 30rpx;
+		top: 70rpx;
 		right: 30rpx;
-		width: 200rpx;
-		text-align: right;
-		line-height: 100rpx;
-		margin-left: 300rpx;
+		/* width: 200rpx; */
+		text-align: center;
+		height: 40rpx;
+		
+		width: 100rpx;
+		background-color: #fff;
+		border-radius: 40rpx;
+		/* line-height: 100rpx; */
+		/* margin-left: 300rpx; */
 	}
 </style>

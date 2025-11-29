@@ -133,6 +133,7 @@
 		},
 		methods: {
 			incomeDetails() {
+				//我的持有    投资金额investmentAmount  今日收益today 累计收益earnings 待收收益toBeCollected 
 				this.$request.get({
 					url: "/app/positionUser/incomeDetails",
 					success: rsp => {

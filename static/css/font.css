@@ -25,7 +25,33 @@
 	font-family: 'HarmonyOS Sans SC-Bold';
 	src: url('./static/css/HarmonyOS_Sans_SC_Medium.ttf'); 
 } */
+/* http://mage1116.oss-cn-hongkong.aliyuncs.com/res */
 
+
+
+@font-face {
+   
+ font-family: 'NotoSansHans-Bold';
+  src: url('@/static/fonts/NotoSansHans-Bold.otf') format('truetype');
+  font-weight: normal;
+   font-style: normal;
+}
+@font-face {
+   
+ font-family: 'OPPOSans';
+  src: url('@/static/fonts/OPPOSans-R.ttf') format('truetype');
+  font-weight: normal;
+   font-style: normal;
+}
+ 
+@font-face {
+   
+ font-family: 'YaHei';
+  src: url('@/static/fonts/alibaba-puhuiti-regular.ttf') format('truetype');
+  font-weight: normal;
+   font-style: normal;
+}
+ 
 .cf{
 	background: linear-gradient(136.4968148044374deg, #01CCC2 0%, #0498D8 48%, #BC64EF 100%);
 	-webkit-background-clip: text;

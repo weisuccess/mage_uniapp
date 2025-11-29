@@ -13,7 +13,7 @@
 		},
 		created() {
 			this.onloadCode =
-				`this.contentWindow.document.body.innerHTML = '<video style="width: 100%;height: 100%" controls="controls" src="${this.src}"></video>';`
+				`this.contentWindow.document.body.innerHTML = '<video style="width: 100%;height: 100%" autoplay="true" controls="controls" src="${this.src}"></video>';`
 		},
 	}
 </script>

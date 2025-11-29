@@ -18,7 +18,11 @@ function noMultipleClicks(methods, info) {
         //  这里是重复点击的判断
     }
 }
+function checkEmail(email){
+	return RegExp(/^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/).test(email);
+}
+ 
 //导出
 export default {
-    noMultipleClicks,      // 禁止多次点击
+    noMultipleClicks,checkEmail      // 禁止多次点击
 }

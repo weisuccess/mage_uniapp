@@ -1,6 +1,6 @@
 <template>
 	<view class="">
-		<view :style="{'background':background,'backgroundSize':'100% 100%'}"
+		<view :style="{'background':background,'backgroundSize':'100% 100%','background-color':backcolor}"
 			style="position: fixed;z-index: 999999;width: 100%;top: 0;">
 			<view style="height: var(--status-bar-height);width: 100%;"></view>
 			<!-- <view :style="{'height':statusBarHeight+'px','background':background}"
@@ -58,6 +58,10 @@
 			rightTxt: {
 				type: String,
 				default: "log"
+			},
+			backcolor: {
+				type: String,
+				default: "#fb4034"
 			},
 			color: {
 				type: String,

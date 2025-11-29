@@ -408,6 +408,7 @@
 				this.$request.get({
 					url: "/app/dreamUserInfo/getUser",
 					success: rsp => {
+						console.log(rsp.data);
 						this.user = rsp.data
 						this.accompanyDay = Math.floor((new Date().getTime() - this.user.createTime) /
 							86400000)

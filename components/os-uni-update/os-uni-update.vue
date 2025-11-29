@@ -3,17 +3,17 @@
 		<view class="content botton-radius">
 			<view class="content-top">
 				<view class="content-top-text">
-					<text class="">发现新版本 v{{data.edition_name}}</text>
+					<text class="">发现新版本 v {{data.edition_name}}</text>
 					<text class="version">当前版本：{{version}}</text>
 				</view>
 				<image class="content-top" style="top: 0;" width="100%" height="100%" src="/static/bg_top.png"></image>
 			</view>
 			<view class="content-header"></view>
-			<view class="content-body">
+			<view class="content-body"> 
 				
 				<view class="title"><text>更新内容</text></view>
 				<view class="body">
-					<scroll-view class="box-des-scroll" scroll-y="true"><rich-text :nodes="data.describe"></rich-text></scroll-view>
+					<scroll-view class="box-des-scroll" scroll-y="true"><rich-text :nodes="data.updateremark"></rich-text></scroll-view>
 				</view>
 				<view class="footer flex-center">
 					<view class="progress-box flex-column" v-if="!updateBtn">
@@ -44,10 +44,12 @@ export default {
 			data: {
 				describe: '1. 修复已知问题<br>2. 优化用户体验',
 				edition_url: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-6bef1fe3-e3e3-4909-9f0c-6ed9bd11c93b/aae2360a-6628-4c93-b873-ce1600b9a852.apk', //安装包下载地址或者通用应用市场地址
-				edition_force: 1, //是否强制更新 0代表否 1代表是
+				edition_force: 0, //是否强制更新 0代表否 1代表是
 				package_type: 0 ,//0是整包升级 1是wgt升级
-				edition_name:'1.0.1' //后端返回的版本名称
-			}
+				edition_name:'1.0.1' ,//后端返回的版本名称
+				updateremark:'',
+			},
+			 
 		};
 	},
 	onHide() { //解决应用切换到后台再次打开更新弹窗叠加多个的问题
@@ -59,12 +61,20 @@ export default {
 	},
 	onLoad({obj}) {
 		this.data = JSON.parse(obj);
-		if (this.data.edition_force == 0) {
-			this.cancleBtn = true;
-		}
-		plus.runtime.getProperty(plus.runtime.appid,(inf) => {
-			this.version = inf.version;
-		})
+		console.log(this.data);
+		
+		console.log(this.data.package_type+"//"+this.data.edition_force+"/// "+this.data.edition_url);
+		// if (this.data.edition_force == 0) {
+		// 	this.cancleBtn = true;
+		// }
+		
+		// #ifdef APP
+		  plus.runtime.getProperty(plus.runtime.appid,(inf) => {
+		  	this.version = inf.version;
+		  })
+		// #endif
+		
+		
 	},
 
 	onBackPress() {
@@ -101,7 +111,7 @@ export default {
 				this.updateBtn = false;
 				this.cancleBtn = false;
 				//wgt资源包升级 下载地址必须以.wgt结尾
-				this.download();
+				this.download(); 
 			}
 		},
 		download() {
@@ -126,7 +136,7 @@ export default {
 								//提示部分wgt包无法安装的问题
 								that.data.edition_force = 0; 
 								uni.showToast({
-									title:e.message,
+									title:'erro',
 									icon:'none',
 									duration:2500
 								})

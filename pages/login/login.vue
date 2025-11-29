@@ -283,6 +283,7 @@
 				this.$request.get({
 					url: "/app/customerInfo/getCustomerList",
 					success: rsp => {
+						console.log(rsp.data[0].customerUrl);
 						uni.navigateTo({
 							url: '/pages/webview/webview2?url=' + rsp.data[0].customerUrl
 						})
@@ -362,6 +363,8 @@
 				let url = uni.getStorageSync('url')
 				console.log(url);
 				let that = this
+				that.login()
+				return;
 				plus.runtime.getProperty(plus.runtime.appid, (widgetInfo) => {
 					console.log(widgetInfo);
 					uni.request({

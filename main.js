@@ -35,6 +35,9 @@ App.mpType = 'app'
 import myPlugins from './utils/plugins.js'
 Vue.use(myPlugins)
 
+// import VueCompositionAPI from '@vue/composition-api'
+// Vue.use(VueCompositionAPI)
+
 const app = new Vue({
 	...App
 })

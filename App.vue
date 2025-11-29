@@ -7,6 +7,29 @@
 		},
 		// mixins: [pageAnimation],
 		onLaunch: function() {
+			// uni.loadFontFace({
+			//   family: 'Senegal',
+			//   source: 'url("/static/nullmage1116.oss-cn-hongkong.aliyuncs.com/res/Senegal.ttf")',
+			//   success() {
+			//       console.log('success')
+			//   }
+			// })
+			// uni.loadFontFace({
+			//     global: true, // 是否全局生效
+			//     family: 'Senegal', // 定义的字体名称
+			//     source: 'url("/static/null/Senegal.ttf")', // 字体资源的地址。建议格式为 TTF 和 WOFF，WOFF2 在低版本的iOS上会不兼容。
+			//     success() {
+			//       console.log('成功的回调函数')
+			//     },
+			//     fail(){
+			//       console.log('失败的回调函数')
+			//     },
+			//     complete(){
+			//       console.log('接口调用结束的回调函数（调用成功、失败都会执行）')
+			//     }
+			//   })
+			
+			 
 			console.log('App onLaunch')
 			if (!uni.getStorageSync('index')) {
 				uni.setStorage({
@@ -43,16 +66,19 @@
 	@import "static/css/oscss.css";
 	@import "static/css/grid.scss";
 	@import "uview-ui/index.scss";
-
+ 
 	button:after {
 		border: none;
 	}
 
 	/*每个页面公共css */
 	page {
+		 font-family: 'OPPOSans';
+		 letter-spacing: 1px;
+		 font-size: 24rpx;
 		width: 100%;
 		overflow-x: hidden;
-		background: #FFFFFF;
+		background-color: #eceded;
 		color:#333;
 		-webkit-user-drag: none
 			/* 禁止用户拖拽 */

@@ -10,7 +10,8 @@
 			<view class="mt130 br10 px30" style="background-color: #fff;">
 				<view class="pt50 lh100 fz40">已连续签到 <text class="color-33CC33 ml10 mr10"> {{sign.continuousDays}}
 					</text> 天</view>
-				<view class="flex-around-center-wrap" v-if="user.vipGradeInfo">
+				<view class="flex-around-center-wrap" v-if="user.vipGradeInfo"> 
+				 
 					<view class="text-align-c py20 fz20 mt10 br10" v-for="(item,index) in 10" :key="index"
 						v-if="index<num" style="width: 18%;background-color: #33CC33;border: 1px solid #aaa;">
 						<image src="https://ubi-res1.oss-cn-hongkong.aliyuncs.com/null/1744534391322usdt.png"
@@ -41,7 +42,7 @@
 			<view style="height: 200rpx;"></view>
 		</view>
 
-
+	   {{signIn}}
 
 		<uni-popup ref="popup">
 			<view style="width: 80vw; margin: 0 10vw; height: 40vh;border-radius: 20rpx;background-color: #fff;">
@@ -132,6 +133,7 @@
 						this.list = []
 						if (this.sign.continuousDays < 7) {
 							this.sel = this.sign.continuousDays - 1
+							 
 							for (let i = 0; i < 7; i++) {
 								if (i < this.sign.continuousDays) {
 									this.list.push({

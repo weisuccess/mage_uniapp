@@ -124,6 +124,7 @@
 						} else {
 							this.arr = {}
 						}
+						console.log(this.arr);
 					}
 				})
 			},

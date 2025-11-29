@@ -78,82 +78,105 @@
 			// this.getSysConfig()
 		},
 		methods: {
-			kefu() {
-				uni.navigateTo({
-					url: '/pages/webview/webview2?url=' + this.qlList.officialImage
-				})
-			},
-			copy(name) {
-				uni.setClipboardData({
-					data: name,
-					success: function() {
-						console.log('success');
-						uni.showToast({
-							title: '复制成功！',
-							icon: 'none'
-						})
-					}
-				});
-			},
-			getInviteCode() {
-				this.$request.get({
-					url: "/app/dreamUserInfo/getInviteCode",
-					success: rsp => {
-						console.log(rsp.data);
-						this.list = rsp.data
-					}
-				})
-			},
-			// getSysConfig() {
-			// 	this.$request.get({
-			// 		url: "/app/versionHistory/getSysConfig",
-			// 		success: rsp => {
-			// 			console.log(rsp.data);
-			// 			this.getsys = rsp.data
-			// 		}
-			// 	})
-			// },
-
-			submit() {
-				// 首先下载图片
-				uni.downloadFile({
-					url: this.list.inviteQr,
-					success: downloadResult => {
-						console.log(downloadResult);
-						if (downloadResult.statusCode === 200) {
-							// 下载成功，保存图片到系统相册
-							uni.saveImageToPhotosAlbum({
-								filePath: downloadResult.tempFilePath,
-								success: () => {
-									uni.showToast({
-										title: '图片保存成功'
-									});
-								},
-								fail: () => {
-									uni.showToast({
-										title: '图片保存失败',
-										icon: 'none'
-									});
-								}
-							});
-						} else {
-							uni.showToast({
-								title: '图片下载失败',
-								icon: 'none'
-							});
-						}
-					},
-					fail: () => {
-						uni.showToast({
-							title: '图片下载失败',
-							icon: 'none'
-						});
-					}
-				});
-			},
-			toBack() {
-				uni.navigateBack()
-			}
+		 getUser() {
+		 				this.$request.get({
+		 					url: "/app/dreamUserInfo/getUser",
+		 					success: rsp => {
+		 						this.user = rsp.data
+		 						console.log(this.user);
+		 						// this.accompanyDay = Math.floor((new Date().getTime() - this.user.createTime) /
+		 						// 	86400000)
+		 					}
+		 				})
+		 			},
+		 			toBack() {
+		 				// uni.navigateBack()
+		 				uni.navigateBack({
+		 					delta: 1, // 返回上一页
+		 					success: () => {
+		 					prevPage.onLoad(); // 调用上一页的 onLoad 方法刷新数据
+		 					}
+		 				});
+		 			},
+		 			kefu() {
+		 				uni.navigateTo({
+		 					url: '/pages/webview/webview2?url=' + this.qlList.officialImage
+		 				})
+		 			},
+		 			copy(name) {
+		 				var that=this;
+		 				uni.setClipboardData({
+		 					data: name,
+		 					success: function() {
+		 						console.log('success');
+		 						uni.hideToast();
+		 						uni.showToast({
+		 							title: that.$i18n.t('复制成功'),
+		 							icon: 'none'
+		 						})
+		 					}
+		 				});
+		 			},
+		 			getInviteCode() {
+		 				this.$request.get({
+		 					url: "/app/dreamUserInfo/getInviteCode",
+		 					success: rsp => {
+		 					 
+		 						this.list = rsp.data
+		 					}
+		 				})
+		 			},
+		 			
+		 			// getSysConfig() {
+		 			// 	this.$request.get({
+		 			// 		url: "/app/versionHistory/getSysConfig",
+		 			// 		success: rsp => {
+		 			// 			console.log(rsp.data);
+		 			// 			this.getsys = rsp.data
+		 			// 		}
+		 			// 	})
+		 			// },
+		 
+		 			submit() {
+		 				// 首先下载图片
+		 				uni.downloadFile({
+		 					url: this.list.inviteQr,
+		 					success: downloadResult => {
+		 						console.log(downloadResult);
+		 						if (downloadResult.statusCode === 200) {
+		 							// 下载成功，保存图片到系统相册
+		 							uni.saveImageToPhotosAlbum({
+		 								filePath: downloadResult.tempFilePath,
+		 								success: () => {
+		 									uni.showToast({
+		 										title: '图片保存成功'
+		 									});
+		 								},
+		 								fail: () => {
+		 									uni.showToast({
+		 										title: '图片保存失败',
+		 										icon: 'none'
+		 									});
+		 								}
+		 							});
+		 						} else {
+		 							uni.showToast({
+		 								title: '图片下载失败',
+		 								icon: 'none'
+		 							});
+		 						}
+		 					},
+		 					fail: () => {
+		 						uni.showToast({
+		 							title: '图片下载失败',
+		 							icon: 'none'
+		 						});
+		 					}
+		 				});
+		 			},
+		 			toBack() {
+		 				uni.navigateBack()
+		 			}
 		}
 	}
 </script>

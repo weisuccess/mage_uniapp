@@ -1,9 +1,9 @@
 {
-    "name" : "UBI",
-    "appid" : "__UNI__EF7ABD4",
+    "name" : "MEGA_EQUITY",
+    "appid" : "__UNI__FE4B309",
     "description" : "",
-    "versionName" : "1.0.8",
-    "versionCode" : 108,
+    "versionName" : "1.1.14",
+    "versionCode" : 1000114,
     "transformPx" : false,
     /* 5+App特有相关 */
     "app-plus" : {
@@ -27,7 +27,7 @@
         "compilerVersion" : 3,
         "splashscreen" : {
             "alwaysShowBeforeRender" : false,
-            "waiting" : true,
+            "waiting" : false,
             "autoclose" : true,
             "delay" : 0
         },
@@ -72,11 +72,11 @@
                 "ad" : {}
             },
             "splashscreen" : {
-                "androidStyle" : "common",
+                "androidStyle" : "default",
                 "android" : {
-                    "hdpi" : "E:/mqapp/1mxzg/first.png",
-                    "xhdpi" : "E:/mqapp/1mxzg/first.png",
-                    "xxhdpi" : "E:/mqapp/1mxzg/first.png"
+                    "hdpi" : "qidong.png",
+                    "xhdpi" : "qidong.png",
+                    "xxhdpi" : "qidong.png"
                 }
             },
             "icons" : {
@@ -150,11 +150,21 @@
                     "pathRewrite" : {
                         "^/v2/app" : ""
                     }
+                },
+                "/api" : {
+                    "target" : "https://www.tsanghi.com",
+                    "changeOrigin" : true, //是否跨域
+                    "secure" : false, // 设置支持https协议的代理
+                    "pathRewrite" : {
+                        "^/api" : "/"
+                    }
                 }
             }
         }
     },
     "quickapp-webview" : {
         "icon" : ""
-    }
+    },
+    "fallbackLocale" : "zh-Hans",
+    "locale" : "zh-Hans"
 }
